@@ -1,0 +1,10 @@
+node_modules
+scss
+css
+logs
+*.log
+package-lock.json
+.DS_Store
+zip
+**/.DS_Store
+dist
