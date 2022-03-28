@@ -2,7 +2,7 @@
 
 <img src="./images/martian-mono-0.9.0-character-set.png" width="830">
 
-Martian Mono is a monospaced typeface family consisting of a variable font and 28 styles: Condensed to Wide, Thin to Extra Black. It’s not a neutral font, but despite this, it remains suitable for reading. Overhanging terminals, a closed aperture, and an almost complete lack of contrast lead to slightly brutal and assertive aesthetics.
+Martian Mono is a monospaced typeface family consisting of a variable font and 28 styles: Condensed to Wide, Thin to Extra Bold. It’s not a neutral font, but despite this, it remains suitable for reading. Overhanging terminals, a closed aperture, and an almost complete lack of contrast lead to slightly brutal and assertive aesthetics.
 
 The typeface features a tall x-height, and it has vertical metrics which guarantee equal space is present above the cap height and under the baseline. The latter makes this typeface an on-screen workhorse: it is evenly placed on buttons, inputs, lists, and forms. When coupled together, all the above features make Martian Mono a reasonable choice for any user interface design.
 
