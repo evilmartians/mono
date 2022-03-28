@@ -1,5 +1,24 @@
 # Changelog
 
+## 2022-03-28, version 0.9.0
+
+- [Ampersands redesign](https://twitter.com/romanshamin_en/status/1477687473669091328): right leg ending, more natural contrast distribution.
+- [New look of guillemets](https://twitter.com/romanshamin_en/status/1478044084782735367) that now look like goldfishes.
+- [New look of section signs](https://twitter.com/romanshamin_en/status/1479523955081945089).
+- [New look of copyright signs](https://twitter.com/romanshamin_en/status/1479884106410479623): more balanced.
+- [New look of pound sterling](https://twitter.com/romanshamin_en/status/1480600396330643456).
+- [Similarly thick strikethroughs](https://twitter.com/romanshamin_en/status/1480982576840187904) in all currencies.
+- Rebalanced ALL glyphs with diagonals, e. g. `Kk`, `Vv`, and `Xx`.
+- Revised the weight of `N`, and `E`.
+- Revised proportions of `Kk`, `N`, `v` and `y`.
+- [Implemented axis mapping](https://twitter.com/romanshamin_en/status/1489629883789713412). the weight coordinates now more correctly correspond to the 100—800 range, and likewise, the width coordinates to the 75—112.5% range. New coordinates comply with the `font-width` and `font-stretch` property specifications. Among other things, this update allows the use of keywords like `bold` or `condensed` in CSS.
+- Expanded [braces, parens, and brackets](https://twitter.com/romanshamin_en/status/1489371033706668034).
+- Decreased contrast for qoute-based signs: `,“”‘’`.
+- Revised terminals’ thickness for `£CGS2356?§cegst`.
+- Made math symbols (`+−×÷`) bigger.
+- Rebalanced `<` and `>` according to new math symbols (`+−×÷`).
+- Deleted Bk (Book) style.
+
 ## 2021-09-01, version 0.8.5
 
 - New proportions and ink traps for `M` and `N`.
