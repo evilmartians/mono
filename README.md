@@ -10,6 +10,10 @@ This version of Martian Mono contains only basic Latin, figures, punctuation, an
 
 Prefer otf file format for macOS, and ttf for Windows.
 
+## Download
+
+Download the latest package from the [releases page](https://github.com/evilmartians/mono/releases).
+
 ## Styles
 
 <img src="./images/martian-mono-font-styles.png" width="830">
