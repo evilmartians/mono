@@ -45,10 +45,10 @@ Originally designed for the screen, the glyph height stick to the pixel grid on 
 
 For the best results use next pairs of size / line height:
 
-7.5 / 10 (or 14, 18) px
-10 / 12 (or 16, 20) px
-12.5 / 14 (or 18, 22) px
-15 / 20 (or 24, 28) px
+* 7.5 / 10 (or 14, 18) px
+* 10 / 12 (or 16, 20) px
+* 12.5 / 14 (or 18, 22) px
+* 15 / 20 (or 24, 28) px
 etc.
 
 ## Support
