@@ -20,24 +20,24 @@ Download the latest package from the [releases page](https://github.com/evilmart
 
 The font has 4 styles on the width axis:
 
-| Short name | Full name |
-| ---------- | --------- |
-| Wd | Wide |
-| Std | Standard |
-| Nr | Narrow |
-| Cn | Condensed |
+| Short name | Full name | CSS percentage | CSS keyword |
+| --- | --- | ---: | --- |
+| Wd | Wide | 112.5% | semi-expanded |
+| Std | Standard | 100% | normal |
+| Nr | Narrow | 87.5% | semi-condensed |
+| Cn | Condensed | 75% | condensed |
 
 And 7 weights:
 
-| Short name | Full name |
-| ---------- | --------- |
-| Th | Thin |
-| xLt | Extra Light |
-| Lt | Light |
-| Rg | Regular |
-| Md | Medium |
-| Bd | Bold |
-| xBd | Extra Bold |
+| Short name | Full name | CSS numeric | CSS keyword |
+| --- | --- | ---: | --- |
+| Th | Thin | 100 |  |
+| xLt | Extra Light | 200 |  |
+| Lt | Light | 300 |  |
+| Rg | Regular | 400 | normal |
+| Md | Medium | 500 |  |
+| Bd | Bold | 700 | bold |
+| xBd | Extra Bold | 900 |  |
 
 ## Font size and legibility
 
