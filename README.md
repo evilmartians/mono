@@ -37,7 +37,7 @@ And 7 weights:
 | Rg | Regular | 400 | normal |
 | Md | Medium | 500 |  |
 | Bd | Bold | 700 | bold |
-| xBd | Extra Bold | 900 |  |
+| xBd | Extra Bold | 800 |  |
 
 ## Font size and legibility
 
