@@ -1,5 +1,4 @@
-Copyright (c) 2021, Roman Shamin (al4emist.artway@gmail.com),
-with Reserved Font Name "Martian Mono".
+Copyright (c) 2021, Roman Shamin (al4emist.artway@gmail.com).
 Copyright (c) 2021, Evil Martians (evilmartians.com, fonts@evilmartians.com).
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
