@@ -22,7 +22,7 @@ The font has 4 styles on the width axis:
 
 | Short name | Full name | CSS percentage | CSS keyword |
 | --- | --- | ---: | --- |
-| Wd | Wide | 112.5% | semi-expanded |
+| sWd | Semi Wide | 112.5% | semi-expanded |
 | Std | Standard | 100% | normal |
 | Nr | Narrow | 87.5% | semi-condensed |
 | Cn | Condensed | 75% | condensed |
