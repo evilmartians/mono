@@ -2,7 +2,7 @@
 
 ---
 
-Martian Mono is a younger brother of Martian Grotesk—a variable font that I meticulously crafted for the needs of designers and web developers. [Get your free trial on Gumroad](https://romanshamin.gumroad.com/l/martian-grotesk-font).
+**Martian Mono is a younger brother of Martian Grotesk—a variable font that I meticulously crafted for the needs of designers and web developers. [Get your free trial on Gumroad](https://romanshamin.gumroad.com/l/martian-grotesk-font).**
 
 ---
 
