@@ -43,6 +43,10 @@ And 7 weights:
 | Bd | Bold | 700 | bold |
 | xBd | Extra Bold | 800 |  |
 
+## OpenType features
+
+<img src="./images/martian-mono-opentype-features.png" width="830">
+
 ## Font size and legibility
 
 Originally designed for the screen, the glyph height stick to the pixel grid on commonly used font sizes. In addition, it comes equipped with OpenType and TrueType hinting, and Martian Mono appears legible on most platforms, even when being rendered in small sizes.
