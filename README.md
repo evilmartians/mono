@@ -61,6 +61,10 @@ etc.
 
 ## Support
 
-If you want to support Martian Mono, spread the word on social media or consider [becoming a patron](https://www.patreon.com/romanshamin).
+If you want to support Martian Mono:
+
+* spread the word on social media,
+* buy [Martian Grotesk](https://romanshamin.gumroad.com/l/martian-grotesk-font),
+* or consider [becoming a patron](https://www.patreon.com/romanshamin).
 
 I’m sincerely grateful for any support!
