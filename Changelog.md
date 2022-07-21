@@ -1,5 +1,83 @@
 # Changelog
 
+## 2022-07-21, version 0.9.1
+
+- Added single guillemets.
+- Added inverted exclamation mark.
+- Added inverted question mark.
+- Breaking change: renamed Wd (Wide) to sWd (Semi Wide) for consistency with Martian Grotesk.
+- Added `®`—registered trademark symbol.
+- Added `™`—trademark symbol.
+- Added `°`—degree symbol.
+- Added metadata (License, License URL, Copyright, etc).
+- Added `Ãã` (Atilde, atilde).
+- Added `Ññ` (Ntilde, ntilde).
+- Added `Õõ` (Otilde, otilde).
+- Added `Áá` (Aacute, aacute).
+- Added `Ćć` (Cacute, cacute).
+- Added `Éé` (Eacute, eacute).
+- Added `Íí` (Iacute, iacute).
+- Added `Óó` (Oacute, oacute).
+- Added `Úú` (Uacute, uacute).
+- Added `Ýý` (Yacute, yacute).
+- Fixed weight classes. Fixes #2.
+- `Axis Mappings` on the font’s level → `Axis Location` on every instance.
+- Added `Ää` (Adieresis, adieresis).
+- Added `Ëë` (Edieresis, edieresis).
+- Added `Ïï` (Idieresis, idieresis).
+- Added `Öö` (Odieresis, odieresis).
+- Added `Üü` (Udieresis, udieresis).
+- Added `Ÿÿ` (Ydieresis, ydieresis).
+- Added `Áá` (Agrave, agrave).
+- Added `Éé` (Egrave, egrave).
+- Added `Íí` (Igrave, igrave).
+- Added `Óó` (Ograve, ograve).
+- Added `Úú` (Ugrave, ugrave).
+- Added `Ââ` (Acircumflex, acircumflex).
+- Added `Êê` (Ecircumflex, ecircumflex).
+- Added `Îî` (Icircumflex, icircumflex).
+- Added `Ôô` (Ocircumflex, ocircumflex).
+- Added `Ûû` (Ucircumflex, ucircumflex).
+- Added `Čč` (Ccaron, ccaron).
+- Added `Šš` (Scaron, scaron).
+- Added `Çç` (Ccedilla, ccedilla).
+- Added `Åå` (Aring, aring).
+- Added `Øø` (Oslash, oslash).
+- Added `Ææ` (AE, ae).
+- Added `Œœ` (OE, oe).
+- Added `ẞß` (Germandbls, germandbls).
+- Removed Reserved Font Name (RFN) from the license. RFN requires any font derivative made by non-authors to be renamed. Removing RFN enables creating font subsets (removing unnecessary glyphs, in other words) for web purposes.
+- Fixed the acute position for `Á` (Aacute).
+- Fixed the grave position for `À` (Agrave).
+- Added superscript numbers: `⁰¹²³⁴⁵⁶⁷⁸⁹`.
+- Added ordinal indicators: `ª` and `º`.
+- Added `Žž` (Zcaron, zcaron).
+- Added `†` and `‡` (dagger and daggerdbl).
+- Added `·` (periodcentered, also known as an interpunct, interpoint, and middle dot).
+- Added nonbreakinghyphen.
+- Martian Mono is available on Homebrew. Thanks to @y-nk and @miccal for this.
+- Added detached diacritical marks: dieresis, acute, circumflex, cedilla, macron.
+- Added non-breaking space (nbspace).
+- Added soft hyphen (softhyphen).
+- Added `¦` broken bar (brokenbar).
+- Added `±` plus–minus sign (plusminus) and its case-sensitive version (plusminus.case).
+- Added `¬` negation aka logical not sign (logicalnot).
+- Added `‰` per mille aka per thousand sign (perthousand).
+- Added `Āā` (Amacron, amacron).
+- Added `Ēē` (Emacron, emacron).
+- Added `Īī` (Imacron, imacron).
+- Added `Ōō` (Omacron, omacron).
+- Added `Ūū` (Umacron, umacron).
+- Added `Ðð` (Eth, eth).  Special thanks to Siggi Odds, Sveinn Davíðsson, and Jökull Solberg.
+- Added `Þþ` (Thorn, thorn).
+- Added paragraph sign.
+- Added `ƒ` aka florin sign (florin).
+- Added `μ` aka micro sign aka mu (micro).
+- Added fraction sign.
+- Added denominators and numerators from 0 to 9.
+- Added fractions: onehalf, onequarter, threequarters.
+- Added scientific inferiors (`sinf`).
+
 ## 2022-03-28, version 0.9.0
 
 - [Ampersands redesign](https://twitter.com/romanshamin_en/status/1477687473669091328): right leg ending, more natural contrast distribution.
