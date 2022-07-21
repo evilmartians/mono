@@ -6,8 +6,6 @@ Martian Mono is a monospaced typeface family consisting of a variable font and 2
 
 The typeface features a tall x-height, and it has vertical metrics which guarantee equal space is present above the cap height and under the baseline. The latter makes this typeface an on-screen workhorse: it is evenly placed on buttons, inputs, lists, and forms. When coupled together, all the above features make Martian Mono a reasonable choice for any user interface design.
 
-This version of Martian Mono contains only basic Latin, figures, punctuation, and essential symbols. Ligatures for code, italics, and other languages support is in progress.
-
 Prefer otf file format for macOS, and ttf for Windows.
 
 ## Download
