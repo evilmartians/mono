@@ -6,7 +6,7 @@ Martian Mono is a younger brother of Martian Grotesk—a variable font that I me
 
 ---
 
-<img src="./images/martian-mono-0.9.0-character-set.png" width="830">
+<img src="./images/martian-mono-0.9.1-character-set.png" width="830">
 
 Martian Mono is a monospaced typeface family consisting of a variable font and 28 styles: Condensed to Wide, Thin to Extra Bold. It’s not a neutral font, but despite this, it remains suitable for reading. Overhanging terminals, a closed aperture, and an almost complete lack of contrast lead to slightly brutal and assertive aesthetics.
 
