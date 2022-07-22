@@ -1,10 +1,21 @@
+*~
+venv
+myenv
+build.stamp
+proof
+fonts
 node_modules
-scss
-css
+package-lock.json
+package.json
 logs
 *.log
-package-lock.json
+
+# OS generated files #
+######################
 .DS_Store
-zip
-**/.DS_Store
-dist
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
