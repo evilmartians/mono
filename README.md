@@ -1,24 +1,28 @@
 # Martian Mono
 
+<img align="right" src="./images/icon.png" width="208" height="208">
+
+Martian Mono is a monospaced version of the Martian Grotesk font for code style design. It inherits Grotesk’s brutal and eye-catching aesthetics as well as all of its benefits—metrics equilibrium, readability and intelligibility, and convenience for web developers and designers who believe in a systematic approach to design.
+
 ---
 
-**Martian Mono is a younger brother of Martian Grotesk—a variable font that I meticulously crafted for the needs of designers and web developers. [Get your free trial on Gumroad](https://romanshamin.gumroad.com/l/martian-grotesk-font).**
+**Get your [Martian Grotesk free trial](https://romanshamin.gumroad.com/l/martian-grotesk-font) on Gumroad.**
 
 ---
 
 <img src="./images/martian-mono-0.9.1-character-set.png" width="830">
 
-Martian Mono is a monospaced typeface family consisting of a variable font and 28 styles: Condensed to Wide, Thin to Extra Bold. It’s not a neutral font, but despite this, it remains suitable for reading. Overhanging terminals, a closed aperture, and an almost complete lack of contrast lead to slightly brutal and assertive aesthetics.
-
 The typeface features a tall x-height, and it has vertical metrics which guarantee equal space is present above the cap height and under the baseline. The latter makes this typeface an on-screen workhorse: it is evenly placed on buttons, inputs, lists, and forms. When coupled together, all the above features make Martian Mono a reasonable choice for any user interface design.
 
-Prefer otf file format for macOS, and ttf for Windows.
+Prefer variable `ttf` of static `otf` file format for macOS, and `ttf` for Windows.
 
 ## Download
 
 Download the latest package from the [releases page](https://github.com/evilmartians/mono/releases).
 
 ## Styles
+
+Martian Mono is consisting of a variable font and 28 styles: Condensed to Semi Wide, Thin to Extra Bold.
 
 <img src="./images/martian-mono-font-styles.png" width="830">
 
