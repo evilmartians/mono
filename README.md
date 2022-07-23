@@ -1,6 +1,6 @@
 # Martian Mono
 
-<img align="right" src="./images/icon.png" width="208" height="208">
+<img align="right" src="./documentation/icon.png" width="208" height="208">
 
 Martian Mono is a monospaced version of the Martian Grotesk font for code style design. It inherits Grotesk’s brutal and eye-catching aesthetics as well as all of its benefits—metrics equilibrium, readability and intelligibility, and convenience for web developers and designers who believe in a systematic approach to design.
 
@@ -10,7 +10,7 @@ Martian Mono is a monospaced version of the Martian Grotesk font for code style 
 
 ---
 
-<img src="./images/martian-mono-0.9.1-character-set.png" width="830">
+<img src="./documentation/martian-mono-0.9.1-character-set.png" width="830">
 
 The typeface features a tall x-height, and it has vertical metrics which guarantee equal space is present above the cap height and under the baseline. The latter makes this typeface an on-screen workhorse: it is evenly placed on buttons, inputs, lists, and forms. When coupled together, all the above features make Martian Mono a reasonable choice for any user interface design.
 
@@ -24,7 +24,7 @@ Download the latest package from the [releases page](https://github.com/evilmart
 
 Martian Mono is consisting of a variable font and 28 styles: Condensed to Semi Wide, Thin to Extra Bold.
 
-<img src="./images/martian-mono-font-styles.png" width="830">
+<img src="./documentation/martian-mono-font-styles.png" width="830">
 
 The font has 4 styles on the width axis:
 
@@ -49,7 +49,7 @@ And 7 weights:
 
 ## OpenType features
 
-<img src="./images/martian-mono-opentype-features.png" width="830">
+<img src="./documentation/martian-mono-opentype-features.png" width="830">
 
 ## Font size and legibility
 
