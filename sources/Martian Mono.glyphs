@@ -16,16 +16,6 @@ classes = (
 automatic = 1;
 code = "A Aacute Acircumflex Adieresis Agrave Amacron Aring Atilde AE B C Cacute Ccaron Ccedilla D Eth E Eacute Ecircumflex Edieresis Egrave Emacron F G H I Iacute Icircumflex Idieresis Igrave Imacron J K L M N Ntilde O Oacute Ocircumflex Odieresis Ograve Omacron Oslash Otilde OE P Thorn Q R S Scaron Germandbls T U Uacute Ucircumflex Udieresis Ugrave Umacron V W X Y Yacute Ydieresis Z Zcaron";
 name = Uppercase;
-},
-{
-code = "# $[tags contains \"three_chars\"]
-";
-name = threeChars;
-},
-{
-code = "# $[tags contains \"two_chars\"]
-";
-name = twoChars;
 }
 );
 customParameters = (
@@ -80,6 +70,11 @@ value = 1;
 {
 name = "Variable Font Origin";
 value = m01;
+},
+{
+name = fsType;
+value = (
+);
 }
 );
 date = "2020-11-28 12:14:13 +0000";
@@ -293,6 +288,14 @@ axesValues = (
 );
 customParameters = (
 {
+name = winAscent;
+value = 1090;
+},
+{
+name = winDescent;
+value = 230;
+},
+{
 name = typoAscender;
 value = 1000;
 },
@@ -302,6 +305,18 @@ value = -200;
 },
 {
 name = typoLineGap;
+value = 0;
+},
+{
+name = hheaAscender;
+value = 1000;
+},
+{
+name = hheaDescender;
+value = -200;
+},
+{
+name = hheaLineGap;
 value = 0;
 },
 {
@@ -356,6 +371,14 @@ axesValues = (
 );
 customParameters = (
 {
+name = winAscent;
+value = 1090;
+},
+{
+name = winDescent;
+value = 230;
+},
+{
 name = typoAscender;
 value = 1000;
 },
@@ -365,6 +388,18 @@ value = -200;
 },
 {
 name = typoLineGap;
+value = 0;
+},
+{
+name = hheaAscender;
+value = 1000;
+},
+{
+name = hheaDescender;
+value = -200;
+},
+{
+name = hheaLineGap;
 value = 0;
 },
 {
@@ -419,6 +454,14 @@ axesValues = (
 );
 customParameters = (
 {
+name = winAscent;
+value = 1090;
+},
+{
+name = winDescent;
+value = 230;
+},
+{
 name = typoAscender;
 value = 1000;
 },
@@ -428,6 +471,18 @@ value = -200;
 },
 {
 name = typoLineGap;
+value = 0;
+},
+{
+name = hheaAscender;
+value = 1000;
+},
+{
+name = hheaDescender;
+value = -200;
+},
+{
+name = hheaLineGap;
 value = 0;
 },
 {
@@ -482,6 +537,14 @@ axesValues = (
 );
 customParameters = (
 {
+name = winAscent;
+value = 1090;
+},
+{
+name = winDescent;
+value = 230;
+},
+{
 name = typoAscender;
 value = 1000;
 },
@@ -491,6 +554,18 @@ value = -200;
 },
 {
 name = typoLineGap;
+value = 0;
+},
+{
+name = hheaAscender;
+value = 1000;
+},
+{
+name = hheaDescender;
+value = -200;
+},
+{
+name = hheaLineGap;
 value = 0;
 },
 {
@@ -546,6 +621,14 @@ axesValues = (
 );
 customParameters = (
 {
+name = winAscent;
+value = 1090;
+},
+{
+name = winDescent;
+value = 230;
+},
+{
 name = typoAscender;
 value = 1000;
 },
@@ -555,6 +638,18 @@ value = -200;
 },
 {
 name = typoLineGap;
+value = 0;
+},
+{
+name = hheaAscender;
+value = 1000;
+},
+{
+name = hheaDescender;
+value = -200;
+},
+{
+name = hheaLineGap;
 value = 0;
 },
 {
@@ -609,6 +704,14 @@ axesValues = (
 );
 customParameters = (
 {
+name = winAscent;
+value = 1090;
+},
+{
+name = winDescent;
+value = 230;
+},
+{
 name = typoAscender;
 value = 1000;
 },
@@ -618,6 +721,18 @@ value = -200;
 },
 {
 name = typoLineGap;
+value = 0;
+},
+{
+name = hheaAscender;
+value = 1000;
+},
+{
+name = hheaDescender;
+value = -200;
+},
+{
+name = hheaLineGap;
 value = 0;
 },
 {
@@ -83905,12 +84020,6 @@ axesValues = (
 110,
 6
 );
-customParameters = (
-{
-name = "Add Feature";
-value = "liga;pos @threeChars <1500 0 1500 0 (wdth:3) 1200 0 1200 0>;\012pos @twoChars <750 0 750 0 (wdth:3) 600 0 600 0>;\012sub H by O;";
-}
-);
 instanceInterpolations = {
 m01 = 1;
 };
@@ -83935,15 +84044,6 @@ Axis = Width;
 Location = 75;
 }
 );
-},
-{
-name = "Add Feature";
-value = "liga;pos @threeChars <1200 0 1200 0>;\012pos @twoChars <600 0 600 0>;\012sub H by O;\012";
-},
-{
-disabled = 1;
-name = "Replace Feature";
-value = "liga;pos @threeChars <1200 0 1200 0>;\012pos @twoChars <600 0 600 0>;\012sub H by O;";
 }
 );
 instanceInterpolations = {
