@@ -1,0 +1,7 @@
+# config.yaml
+sources:
+    - Martian Mono.glyphs
+axisOrder:
+    - wght
+    - wdth
+familyName: "Martian Mono"
