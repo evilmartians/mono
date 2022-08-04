@@ -73284,7 +73284,7 @@ unicode = 711;
 {
 color = 9;
 glyphname = breve;
-lastChange = "2022-08-04 09:28:12 +0000";
+lastChange = "2022-08-04 09:52:35 +0000";
 layers = (
 {
 layerId = m009;
@@ -73293,7 +73293,7 @@ shapes = (
 ref = brevecomb;
 }
 );
-width = 600;
+width = 0;
 },
 {
 layerId = m005;
@@ -73302,7 +73302,7 @@ shapes = (
 ref = brevecomb;
 }
 );
-width = 600;
+width = 0;
 },
 {
 layerId = m006;
@@ -73311,7 +73311,7 @@ shapes = (
 ref = brevecomb;
 }
 );
-width = 600;
+width = 0;
 },
 {
 layerId = m007;
@@ -73320,7 +73320,7 @@ shapes = (
 ref = brevecomb;
 }
 );
-width = 600;
+width = 0;
 },
 {
 layerId = m01;
@@ -73329,7 +73329,7 @@ shapes = (
 ref = brevecomb;
 }
 );
-width = 600;
+width = 0;
 },
 {
 layerId = m002;
@@ -73338,7 +73338,7 @@ shapes = (
 ref = brevecomb;
 }
 );
-width = 600;
+width = 0;
 }
 );
 unicode = 728;
