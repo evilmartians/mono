@@ -1,5 +1,93 @@
 # Changelog
 
+## 2022-10-02, version 0.9.2
+
+- Added .notdef glyph.
+- Added periodcentered.loclCAT and periodcentered.loclCAT.case glyphs (aka punt volat) for Catalan.
+- Added brevecomb and breve.
+- Added `Ăă` (Abreve, abreve).
+- Added `Ğğ` (Gbreve, gbreve).
+- Added `Ŭŭ` (Ubreve, ubreve).
+- Added caroncomb.alt.
+- Added `Ǎǎ` (Acaron, acaron).
+- Added `Ďď` (Dcaron, dcaron).
+- Added `Ěě` (Ecaron, ecaron).
+- Added `Ľľ` (Lcaron, lcaron).
+- Added `Ňň` (Ncaron, ncaron).
+- Added `Řř` (Rcaron, rcaron).
+- Added `Ťť` (Tcaron, tcaron).
+- Added `Ůů` (Uring, uring).
+- Added dotaccent.
+- Added `Ċċ` (Cdotaccent, cdotaccent).
+- Added `Ėė` (Edotaccent, edotaccent).
+- Added `Ġġ` (Gdotaccent, gdotaccent).
+- Added `İi` (Idotaccent, idotaccent).
+- Added `Żż` (Zdotaccent, Zdotaccent).
+- Added `Ĺĺ` (Lacute, lacute).
+- Added `Ńń` (Nacute, nacute).
+- Added `Ŕŕ` (Racute, racute).
+- Added `Śś` (Sacute, sacute).
+- Added `Ẃẃ` (Wacute, wacute).
+- Added `Źź` (Zacute, zacute).
+- Added `Ŵŵ` (Wcircumflex, wcircumflex).
+- Added `Ẅẅ` (Wdieresis, wdieresis).
+- Added `Ẁẁ` (Wgrave, wgrave).
+- Added `Ŷŷ` (Ycircumflex, ycircumflex).
+- Added `Ỳỳ` (Ygrave, ygrave).
+- Added caron glyph.
+- Added ring glyph.
+- Added `Şş` (Scedilla, scedilla).
+- Added `Ĳĳ` (IJ, ij).
+- Added ogonekcomb, ogonek, and ogonekcomb.e glyphs.
+- Added `Ąą` (Aogonek, aogonek).
+- Added `Įį` (Iogonek, iogonek).
+- Added `Ųų` (Uogonek, uogonek).
+- Added `Ęę` (Eogonek, eogonek).
+- Added commaaccentcomb and commaturnedabovecomb.
+- Added `Ģģ` (Gcommaaccent, gcommaaccent).
+- Added `Ķķ` (Kcommaaccent, kcommaaccent).
+- Added `Ļļ` (Lcommaaccent, lcommaaccent).
+- Added `Ņņ` (Ncommaaccent, ncommaaccent).
+- Added `Ŗŗ` (Rcommaaccent, rcommaaccent).
+- Added `Șș` (Scommaaccent, scommaaccent).
+- Added `Țț` (Gcommaaccent, gcommaaccent).
+- Added hungarumlautcomb and hungarumlaut glyphs.
+- Added `Őő` (Ohungarumlaut, ohungarumlaut).
+- Added `Űű` (Uhungarumlaut, uhungarumlaut).
+- Added `Đđ` (Dcroat, dcroat).
+- Added `Ħħ` (Hbar, hbar).
+- Added `Łł` (Lslash, lslash).
+- Added `Ŋŋ` (Eng, eng).
+- Added `Ɲɲ` (Nhookleft, nhookleft).
+- Added `J́ȷ́` (Jacute, jacute).
+- Added `Ţţ` (Tcedilla, tcedilla).
+- Added `Əə` (Schwa, schwa).
+- Added `Ẽẽ` (Etilde, etilde).
+- Added `Ĩĩ` (Itilde, itilde).
+- Added `Ũũ` (Utilde, utilde).
+- Added `Ỹỹ` (Ytilde, ytilde).
+- Added `Ꞌꞌ` (Saltillo, saltillo).
+- Added `Ǧǧ` (Gcaron, gcaron).
+- Added `Ȳȳ` (Ymacron, ymacron).
+- Added dotbelowcomb glyph.
+- Added `Ịị` (Idotbelow, idotbelow).
+- Added `Ọọ` (Odotbelow, odotbelow).
+- Added `Ụụ` (Udotbelow, udotbelow).
+- Added `Ŧŧ` (Tbar, tbar).
+- Added `Ḍḍ` (Ddotbelow, ddotbelow) for Arabic transcriptions.
+- Added `Ḥḥ` (Hdotbelow, hdotbelow) for Arabic transcriptions.
+- Added `Ṣṣ` (Sdotbelow, sdotbelow) for Arabic transcriptions.
+- Added `Ṭṭ` (Tdotbelow, tdotbelow) for Arabic transcriptions.
+- Added `Ẓẓ` (Zdotbelow, zdotbelow) for Arabic transcriptions.
+- Added `←↑↓→` (leftArrow, upArrow, downArrow, rightArrow).
+- Added `№` (numero).
+- Added `Ŀŀ` (Ldot, ldot) for Catalan.
+- Added IJacute, ijacute.
+- Added `Ǽǽ` (AEacute, aeacute).
+- Added `Ǿǿ` (Oslashacute, oslashacute).
+- Added `Ǻǻ` (Aringacute, aringacute).
+- Added `ĸ` (kgreenlandic).
+
 ## 2022-07-21, version 0.9.1
 
 - Added single guillemets.
