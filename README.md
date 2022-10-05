@@ -14,7 +14,7 @@ Martian Mono is a monospaced version of the Martian Grotesk font for code style 
 
 The typeface features a tall x-height, and it has vertical metrics which guarantee equal space is present above the cap height and under the baseline. The latter makes this typeface an on-screen workhorse: it is evenly placed on buttons, inputs, lists, and forms. When coupled together, all the above features make Martian Mono a reasonable choice for any user interface design.
 
-Prefer variable `ttf` of static `otf` file format for macOS, and `ttf` for Windows.
+When choosing a font format, prefer `ttf` for variable and `otf` for static on macOS, and `ttf` for Windows.
 
 ## Download
 
@@ -22,7 +22,7 @@ Download the latest package from the [releases page](https://github.com/evilmart
 
 ## Styles
 
-Martian Mono is consisting of a variable font and 28 styles: Condensed to Semi Wide, Thin to Extra Bold.
+Martian Mono consists of a variable font and 28 styles: Condensed to Semi Wide, Thin to Extra Bold.
 
 <img src="./documentation/martian-mono-font-styles.png" width="830">
 
@@ -53,22 +53,21 @@ And 7 weights:
 
 ## Font size and legibility
 
-Originally designed for the screen, the glyph height stick to the pixel grid on commonly used font sizes. In addition, it comes equipped with OpenType and TrueType hinting, and Martian Mono appears legible on most platforms, even when being rendered in small sizes.
+Originally designed for the screen, the glyph heights stick to the pixel grid on commonly used font sizes. In addition, it comes equipped with OpenType and TrueType hinting, and Martian Mono appears legible on most platforms, even when being rendered in small sizes.
 
-For the best results use next pairs of size / line height:
+For the best results use the following pairs of size / line height:
 
-* 7.5 / 10 (or 14, 18) px
-* 10 / 12 (or 16, 20) px
-* 12.5 / 14 (or 18, 22) px
-* 15 / 20 (or 24, 28) px
-etc.
+* 7.5 / 10 (or 14, 18, etc.) px
+* 10 / 12 (or 16, 20, etc.) px
+* 12.5 / 14 (or 18, 22, etc.) px
+* 15 / 20 (or 24, 28, etc.) px
 
 ## Support
 
 If you want to support Martian Mono:
 
-* spread the word on social media,
-* buy [Martian Grotesk](https://romanshamin.gumroad.com/l/martian-grotesk-font),
-* or consider [becoming a patron](https://www.patreon.com/romanshamin).
+* Spread the word on social media
+* Buy [Martian Grotesk](https://romanshamin.gumroad.com/l/martian-grotesk-font)
+* Consider [becoming a patron](https://www.patreon.com/romanshamin)
 
 I’m sincerely grateful for any support!
