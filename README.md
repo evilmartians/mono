@@ -10,7 +10,7 @@ Martian Mono is a monospaced version of the Martian Grotesk font for code style 
 
 ---
 
-<img src="./documentation/martian-mono-0.9.1-character-set.png" width="830">
+<img src="./documentation/martian-mono-character-set.png" width="830">
 
 The typeface features a tall x-height, and it has vertical metrics which guarantee equal space is present above the cap height and under the baseline. The latter makes this typeface an on-screen workhorse: it is evenly placed on buttons, inputs, lists, and forms. When coupled together, all the above features make Martian Mono a reasonable choice for any user interface design.
 
