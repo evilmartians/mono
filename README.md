@@ -62,6 +62,13 @@ For the best results use the following pairs of size / line height:
 * 12.5 / 14 (or 18, 22, etc.) px
 * 15 / 20 (or 24, 28, etc.) px
 
+## Roadmap
+
+* Basic Cyrillic script (WIP, [watch the process](https://twitter.com/romanshamin_en) on Twitter)
+* Coding ligatures (blocked by [Glyphs app bug](https://forum.glyphsapp.com/t/glyphs-crashes-because-of-pos-rule/22838/17))
+* Powerline symbols
+* Italics
+
 ## Support
 
 If you want to support Martian Mono:
