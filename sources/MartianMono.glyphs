@@ -1,5 +1,5 @@
 {
-.appVersion = "3139";
+.appVersion = "3133";
 .formatVersion = 3;
 axes = (
 {
@@ -16,16 +16,6 @@ classes = (
 automatic = 1;
 code = "A Aacute Abreve Acaron Acircumflex Adieresis Agrave Amacron Aogonek Aring Aringacute Atilde AE AEacute B C Cacute Ccaron Ccedilla Cdotaccent D Eth Dcaron Dcroat Ddotbelow E Eacute Ecaron Ecircumflex Edieresis Edotaccent Egrave Emacron Eogonek Etilde Schwa F G Gbreve Gcaron Gcommaaccent Gdotaccent H Hbar Hdotbelow I IJ Iacute Icircumflex Idieresis Idotaccent Idotbelow Igrave Imacron Iogonek Itilde J Jacute K Kcommaaccent L Lacute Lcaron Lcommaaccent Ldot Lslash M N Nacute Ncaron Ncommaaccent Nhookleft Ntilde Eng O Oacute Ocircumflex Odieresis Odotbelow Ograve Ohungarumlaut Omacron Oslash Oslashacute Otilde OE P Thorn Q R Racute Rcaron Rcommaaccent S Sacute Saltillo Scaron Scedilla Scommaaccent Sdotbelow Germandbls T Tbar Tcaron Tcedilla Tcommaaccent Tdotbelow U Uacute Ubreve Ucircumflex Udieresis Udotbelow Ugrave Uhungarumlaut Umacron Uogonek Uring Utilde V W Wacute Wcircumflex Wdieresis Wgrave X Y Yacute Ycircumflex Ydieresis Ygrave Ymacron Ytilde Z Zacute Zcaron Zdotaccent Zdotbelow";
 name = Uppercase;
-},
-{
-code = "# $[tags contains \"three_chars\"]
-";
-name = threeChars;
-},
-{
-code = "# $[tags contains \"two_chars\"]
-";
-name = twoChars;
 }
 );
 customParameters = (
@@ -85,6 +75,31 @@ value = m01;
 name = fsType;
 value = (
 );
+},
+{
+name = "Axis Mappings";
+value = {
+wdth = {
+75 = 3;
+87.5 = 4;
+100 = 5;
+112.5 = 6;
+};
+wght = {
+100 = 40;
+200 = 68;
+300 = 96;
+400 = 110;
+500 = 126;
+600 = 144;
+700 = 162;
+800 = 180;
+};
+};
+},
+{
+name = isFixedPitch;
+value = 1;
 }
 );
 date = "2020-11-28 12:14:13 +0000";
@@ -133,8 +148,8 @@ code = "lookup ccmp_Other_1 {
 	@CombiningNonTopAccents = [cedillacomb dotbelowcomb ogonekcomb];
 	sub [i j]' @CombiningTopAccents by [idotless jdotless];
 	sub [i j]' @CombiningNonTopAccents @CombiningTopAccents by [idotless jdotless];
-	@Markscomb = [periodcentered.loclCAT];
-	@MarkscombCase = [periodcentered.loclCAT.case];
+	@Markscomb = [ringacutecomb periodcentered.loclCAT];
+	@MarkscombCase = [ringacutecomb.case periodcentered.loclCAT.case];
 	sub @Markscomb @Markscomb' by @MarkscombCase;
 	sub @Uppercase @Markscomb' by @MarkscombCase;
 } ccmp_Other_1;
@@ -255,8 +270,8 @@ sub approxequal by approxequal.case;
 sub asciitilde by asciitilde.case;
 sub rightArrow by rightArrow.case;
 sub leftArrow by leftArrow.case;
-sub periodcentered.loclCAT by periodcentered.loclCAT.case;
 sub ringacutecomb by ringacutecomb.case;
+sub periodcentered.loclCAT by periodcentered.loclCAT.case;
 ";
 tag = case;
 },
@@ -285,6 +300,7 @@ sub cent by cent.bold;
 
 #endif
 ";
+disabled = 1;
 tag = rlig;
 },
 {
@@ -382,7 +398,7 @@ value = 1090;
 },
 {
 name = winDescent;
-value = 230;
+value = 250;
 },
 {
 name = typoAscender;
@@ -407,19 +423,6 @@ value = -200;
 {
 name = hheaLineGap;
 value = 0;
-},
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 100;
-},
-{
-Axis = Width;
-Location = 75;
-}
-);
 }
 );
 iconName = Light_Condensed;
@@ -445,7 +448,7 @@ over = 12;
 pos = 848;
 }
 );
-name = "Cn Th";
+name = "Condensed Thin";
 stemValues = (
 40,
 34,
@@ -466,7 +469,7 @@ value = 1090;
 },
 {
 name = winDescent;
-value = 230;
+value = 250;
 },
 {
 name = typoAscender;
@@ -491,19 +494,6 @@ value = -200;
 {
 name = hheaLineGap;
 value = 0;
-},
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 400;
-},
-{
-Axis = Width;
-Location = 75;
-}
-);
 }
 );
 iconName = Condensed;
@@ -529,7 +519,7 @@ over = 16;
 pos = 848;
 }
 );
-name = "Cn Rg";
+name = "Condensed Regular";
 stemValues = (
 110,
 96,
@@ -550,7 +540,7 @@ value = 1090;
 },
 {
 name = winDescent;
-value = 230;
+value = 250;
 },
 {
 name = typoAscender;
@@ -575,19 +565,6 @@ value = -200;
 {
 name = hheaLineGap;
 value = 0;
-},
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 800;
-},
-{
-Axis = Width;
-Location = 75;
-}
-);
 }
 );
 iconName = SemiBold_Condensed;
@@ -613,7 +590,7 @@ over = 20;
 pos = 848;
 }
 );
-name = "Cn xBd";
+name = "Condensed ExtraBold";
 stemValues = (
 180,
 134,
@@ -634,7 +611,7 @@ value = 1090;
 },
 {
 name = winDescent;
-value = 230;
+value = 250;
 },
 {
 name = typoAscender;
@@ -659,19 +636,6 @@ value = -200;
 {
 name = hheaLineGap;
 value = 0;
-},
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 100;
-},
-{
-Axis = Width;
-Location = 112.5;
-}
-);
 }
 );
 iconName = Light;
@@ -697,7 +661,7 @@ over = 12;
 pos = 848;
 }
 );
-name = "sWd Th";
+name = "SemiExpanded Thin";
 stemValues = (
 40,
 34,
@@ -717,7 +681,7 @@ value = 1090;
 },
 {
 name = winDescent;
-value = 230;
+value = 250;
 },
 {
 name = typoAscender;
@@ -742,19 +706,6 @@ value = -200;
 {
 name = hheaLineGap;
 value = 0;
-},
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 400;
-},
-{
-Axis = Width;
-Location = 112.5;
-}
-);
 }
 );
 id = m01;
@@ -779,7 +730,7 @@ over = 16;
 pos = 848;
 }
 );
-name = "sWd Rg";
+name = "SemiExpanded Regular";
 stemValues = (
 110,
 96,
@@ -799,7 +750,7 @@ value = 1090;
 },
 {
 name = winDescent;
-value = 230;
+value = 250;
 },
 {
 name = typoAscender;
@@ -824,19 +775,6 @@ value = -200;
 {
 name = hheaLineGap;
 value = 0;
-},
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 800;
-},
-{
-Axis = Width;
-Location = 112.5;
-}
-);
 }
 );
 iconName = SemiBold;
@@ -862,7 +800,7 @@ over = 20;
 pos = 848;
 }
 );
-name = "sWd xBd";
+name = "SemiExpanded ExtraBold";
 stemValues = (
 180,
 134,
@@ -83413,6 +83351,66 @@ width = 750;
 unicode = 180;
 },
 {
+glyphname = hungarumlaut;
+layers = (
+{
+layerId = m009;
+shapes = (
+{
+ref = hungarumlautcomb;
+}
+);
+width = 600;
+},
+{
+layerId = m005;
+shapes = (
+{
+ref = hungarumlautcomb;
+}
+);
+width = 600;
+},
+{
+layerId = m006;
+shapes = (
+{
+ref = hungarumlautcomb;
+}
+);
+width = 600;
+},
+{
+layerId = m007;
+shapes = (
+{
+ref = hungarumlautcomb;
+}
+);
+width = 750;
+},
+{
+layerId = m01;
+shapes = (
+{
+ref = hungarumlautcomb;
+}
+);
+width = 750;
+},
+{
+layerId = m002;
+shapes = (
+{
+ref = hungarumlautcomb;
+}
+);
+width = 750;
+}
+);
+unicode = 733;
+},
+{
 glyphname = circumflex;
 layers = (
 {
@@ -91987,7 +91985,7 @@ topValue = 1000;
 {
 export = 0;
 glyphname = "_part.bar-top";
-lastChange = "2022-01-20 15:43:29 +0000";
+lastChange = "2022-11-17 14:45:23 +0000";
 layers = (
 {
 anchors = (
@@ -104053,893 +104051,6 @@ axesValues = (
 40,
 3
 );
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 100;
-},
-{
-Axis = Width;
-Location = 75;
-}
-);
-},
-{
-disabled = 1;
-name = "Add Feature";
-value = "liga;pos @threeChars <1200 0 1200 0>;\012pos @twoChars <600 0 600 0>;\012sub H by X;";
-},
-{
-disabled = 1;
-name = "Replace Feature";
-value = "liga;pos @threeChars <1500 0 1500 0 (wdth:3) 1200 0 1200 0>;\012pos @twoChars <750 0 750 0 (wdth:3) 600 0 600 0>;\012sub H by O;";
-}
-);
-instanceInterpolations = {
-m009 = 1;
-};
-name = "Cn Th";
-weightClass = 100;
-widthClass = 3;
-},
-{
-axesValues = (
-40,
-4
-);
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 100;
-},
-{
-Axis = Width;
-Location = 87.5;
-}
-);
-}
-);
-instanceInterpolations = {
-m007 = 0.33333;
-m009 = 0.66667;
-};
-name = "Nr Th";
-weightClass = 100;
-widthClass = 4;
-},
-{
-axesValues = (
-40,
-5
-);
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 100;
-},
-{
-Axis = Width;
-Location = 100;
-}
-);
-}
-);
-instanceInterpolations = {
-m007 = 0.66667;
-m009 = 0.33333;
-};
-name = "Std Th";
-weightClass = 100;
-},
-{
-axesValues = (
-40,
-6
-);
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 100;
-},
-{
-Axis = Width;
-Location = 112.5;
-}
-);
-}
-);
-instanceInterpolations = {
-m007 = 1;
-};
-name = "sWd Th";
-weightClass = 100;
-widthClass = 6;
-},
-{
-axesValues = (
-68,
-3
-);
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 200;
-},
-{
-Axis = Width;
-Location = 75;
-}
-);
-}
-);
-instanceInterpolations = {
-m005 = 0.4;
-m009 = 0.6;
-};
-name = "Cn xLt";
-weightClass = 200;
-widthClass = 3;
-},
-{
-axesValues = (
-68,
-4
-);
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 200;
-},
-{
-Axis = Width;
-Location = 87.5;
-}
-);
-}
-);
-instanceInterpolations = {
-m005 = 0.26667;
-m007 = 0.2;
-m009 = 0.4;
-m01 = 0.13333;
-};
-name = "Nr xLt";
-weightClass = 200;
-widthClass = 4;
-},
-{
-axesValues = (
-68,
-5
-);
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 200;
-},
-{
-Axis = Width;
-Location = 100;
-}
-);
-}
-);
-instanceInterpolations = {
-m005 = 0.13333;
-m007 = 0.4;
-m009 = 0.2;
-m01 = 0.26667;
-};
-name = "Std xLt";
-weightClass = 200;
-},
-{
-axesValues = (
-68,
-6
-);
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 200;
-},
-{
-Axis = Width;
-Location = 112.5;
-}
-);
-}
-);
-instanceInterpolations = {
-m007 = 0.6;
-m01 = 0.4;
-};
-name = "sWd xLt";
-weightClass = 200;
-widthClass = 6;
-},
-{
-axesValues = (
-96,
-3
-);
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 300;
-},
-{
-Axis = Width;
-Location = 75;
-}
-);
-}
-);
-instanceInterpolations = {
-m005 = 0.8;
-m009 = 0.2;
-};
-name = "Cn Lt";
-weightClass = 300;
-widthClass = 3;
-},
-{
-axesValues = (
-96,
-4
-);
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 300;
-},
-{
-Axis = Width;
-Location = 87.5;
-}
-);
-}
-);
-instanceInterpolations = {
-m005 = 0.53333;
-m007 = 0.06667;
-m009 = 0.13333;
-m01 = 0.26667;
-};
-name = "Nr Lt";
-weightClass = 300;
-widthClass = 4;
-},
-{
-axesValues = (
-96,
-5
-);
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 300;
-},
-{
-Axis = Width;
-Location = 100;
-}
-);
-}
-);
-instanceInterpolations = {
-m005 = 0.26667;
-m007 = 0.13333;
-m009 = 0.06667;
-m01 = 0.53333;
-};
-name = "Std Lt";
-weightClass = 300;
-},
-{
-axesValues = (
-96,
-6
-);
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 300;
-},
-{
-Axis = Width;
-Location = 112.5;
-}
-);
-}
-);
-instanceInterpolations = {
-m007 = 0.2;
-m01 = 0.8;
-};
-name = "sWd Lt";
-weightClass = 300;
-widthClass = 6;
-},
-{
-axesValues = (
-110,
-3
-);
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 400;
-},
-{
-Axis = Width;
-Location = 75;
-}
-);
-}
-);
-instanceInterpolations = {
-m005 = 1;
-};
-name = "Cn Rg";
-widthClass = 3;
-},
-{
-axesValues = (
-110,
-4
-);
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 400;
-},
-{
-Axis = Width;
-Location = 87.5;
-}
-);
-}
-);
-instanceInterpolations = {
-m005 = 0.66667;
-m01 = 0.33333;
-};
-name = "Nr Rg";
-widthClass = 4;
-},
-{
-axesValues = (
-110,
-5
-);
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 400;
-},
-{
-Axis = Width;
-Location = 100;
-}
-);
-}
-);
-instanceInterpolations = {
-m005 = 0.33333;
-m01 = 0.66667;
-};
-name = "Std Rg";
-},
-{
-axesValues = (
-110,
-6
-);
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 400;
-},
-{
-Axis = Width;
-Location = 112.5;
-}
-);
-}
-);
-instanceInterpolations = {
-m01 = 1;
-};
-name = "sWd Rg";
-widthClass = 6;
-},
-{
-axesValues = (
-132,
-3
-);
-customParameters = (
-{
-name = "Rename Glyphs";
-value = (
-"dollar=dollar.bold",
-"cent=cent.bold"
-);
-},
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 500;
-},
-{
-Axis = Width;
-Location = 75;
-}
-);
-}
-);
-instanceInterpolations = {
-m005 = 0.68571;
-m006 = 0.31429;
-};
-name = "Cn Md";
-weightClass = 500;
-widthClass = 3;
-},
-{
-axesValues = (
-132,
-4
-);
-customParameters = (
-{
-name = "Rename Glyphs";
-value = (
-"dollar=dollar.bold",
-"cent=cent.bold"
-);
-},
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 500;
-},
-{
-Axis = Width;
-Location = 87.5;
-}
-);
-}
-);
-instanceInterpolations = {
-m002 = 0.10476;
-m005 = 0.45714;
-m006 = 0.20952;
-m01 = 0.22857;
-};
-name = "Nr Md";
-weightClass = 500;
-widthClass = 4;
-},
-{
-axesValues = (
-132,
-5
-);
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 500;
-},
-{
-Axis = Width;
-Location = 100;
-}
-);
-}
-);
-instanceInterpolations = {
-m002 = 0.20952;
-m005 = 0.22857;
-m006 = 0.10476;
-m01 = 0.45714;
-};
-name = "Std Md";
-weightClass = 500;
-},
-{
-axesValues = (
-132,
-6
-);
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 500;
-},
-{
-Axis = Width;
-Location = 112.5;
-}
-);
-}
-);
-instanceInterpolations = {
-m002 = 0.31429;
-m01 = 0.68571;
-};
-name = "sWd Md";
-weightClass = 500;
-widthClass = 6;
-},
-{
-axesValues = (
-156,
-3
-);
-customParameters = (
-{
-name = "Rename Glyphs";
-value = (
-"dollar=dollar.bold",
-"cent=cent.bold"
-);
-},
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 700;
-},
-{
-Axis = Width;
-Location = 75;
-}
-);
-}
-);
-instanceInterpolations = {
-m005 = 0.34286;
-m006 = 0.65714;
-};
-isBold = 1;
-linkStyle = "Cn Rg";
-name = "Cn Bd";
-weightClass = 700;
-widthClass = 3;
-},
-{
-axesValues = (
-156,
-4
-);
-customParameters = (
-{
-name = "Rename Glyphs";
-value = (
-"dollar=dollar.bold",
-"cent=cent.bold"
-);
-},
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 700;
-},
-{
-Axis = Width;
-Location = 87.5;
-}
-);
-}
-);
-instanceInterpolations = {
-m002 = 0.21905;
-m005 = 0.22857;
-m006 = 0.4381;
-m01 = 0.11429;
-};
-isBold = 1;
-linkStyle = "Nr Rg";
-name = "Nr Bd";
-weightClass = 700;
-widthClass = 4;
-},
-{
-axesValues = (
-156,
-5
-);
-customParameters = (
-{
-name = "Rename Glyphs";
-value = (
-"dollar=dollar.bold",
-"cent=cent.bold"
-);
-},
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 700;
-},
-{
-Axis = Width;
-Location = 100;
-}
-);
-}
-);
-instanceInterpolations = {
-m002 = 0.4381;
-m005 = 0.11429;
-m006 = 0.21905;
-m01 = 0.22857;
-};
-isBold = 1;
-linkStyle = "Std Rg";
-name = "Std Bd";
-weightClass = 700;
-},
-{
-axesValues = (
-156,
-6
-);
-customParameters = (
-{
-name = "Rename Glyphs";
-value = (
-"dollar=dollar.bold",
-"cent=cent.bold"
-);
-},
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 700;
-},
-{
-Axis = Width;
-Location = 112.5;
-}
-);
-}
-);
-instanceInterpolations = {
-m002 = 0.65714;
-m01 = 0.34286;
-};
-isBold = 1;
-linkStyle = "sWd Rg";
-name = "sWd Bd";
-weightClass = 700;
-widthClass = 6;
-},
-{
-axesValues = (
-180,
-3
-);
-customParameters = (
-{
-name = "Rename Glyphs";
-value = (
-"dollar=dollar.bold",
-"cent=cent.bold"
-);
-},
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 800;
-},
-{
-Axis = Width;
-Location = 75;
-}
-);
-}
-);
-instanceInterpolations = {
-m006 = 1;
-};
-name = "Cn xBd";
-weightClass = 800;
-widthClass = 3;
-},
-{
-axesValues = (
-180,
-4
-);
-customParameters = (
-{
-name = "Rename Glyphs";
-value = (
-"dollar=dollar.bold",
-"cent=cent.bold"
-);
-},
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 800;
-},
-{
-Axis = Width;
-Location = 87.5;
-}
-);
-}
-);
-instanceInterpolations = {
-m002 = 0.33333;
-m006 = 0.66667;
-};
-name = "Nr xBd";
-weightClass = 800;
-widthClass = 4;
-},
-{
-axesValues = (
-180,
-5
-);
-customParameters = (
-{
-name = "Rename Glyphs";
-value = (
-"dollar=dollar.bold",
-"cent=cent.bold"
-);
-},
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 800;
-},
-{
-Axis = Width;
-Location = 100;
-}
-);
-}
-);
-instanceInterpolations = {
-m002 = 0.66667;
-m006 = 0.33333;
-};
-name = "Std xBd";
-weightClass = 800;
-},
-{
-axesValues = (
-180,
-6
-);
-customParameters = (
-{
-name = "Rename Glyphs";
-value = (
-"dollar=dollar.bold",
-"cent=cent.bold"
-);
-},
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 800;
-},
-{
-Axis = Width;
-Location = 112.5;
-}
-);
-}
-);
-instanceInterpolations = {
-m002 = 1;
-};
-name = "sWd xBd";
-weightClass = 800;
-widthClass = 6;
-},
-{
-axesValues = (
-40,
-3
-);
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 100;
-},
-{
-Axis = Width;
-Location = 75;
-}
-);
-}
-);
-exports = 0;
 instanceInterpolations = {
 m009 = 1;
 };
@@ -104960,132 +104071,9 @@ widthClass = 3;
 },
 {
 axesValues = (
-40,
-4
-);
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 100;
-},
-{
-Axis = Width;
-Location = 87.5;
-}
-);
-}
-);
-exports = 0;
-instanceInterpolations = {
-m007 = 0.33333;
-m009 = 0.66667;
-};
-name = Thin;
-properties = (
-{
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Martian Mono SemiCondensed";
-}
-);
-}
-);
-weightClass = 100;
-widthClass = 4;
-},
-{
-axesValues = (
-40,
-5
-);
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 100;
-},
-{
-Axis = Width;
-Location = 100;
-}
-);
-}
-);
-exports = 0;
-instanceInterpolations = {
-m007 = 0.66667;
-m009 = 0.33333;
-};
-name = Thin;
-weightClass = 100;
-},
-{
-axesValues = (
-40,
-6
-);
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 100;
-},
-{
-Axis = Width;
-Location = 112.5;
-}
-);
-}
-);
-exports = 0;
-instanceInterpolations = {
-m007 = 1;
-};
-name = Thin;
-properties = (
-{
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Martian Mono SemiExpanded";
-}
-);
-}
-);
-weightClass = 100;
-widthClass = 6;
-},
-{
-axesValues = (
 68,
 3
 );
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 200;
-},
-{
-Axis = Width;
-Location = 75;
-}
-);
-}
-);
-exports = 0;
 instanceInterpolations = {
 m005 = 0.4;
 m009 = 0.6;
@@ -105107,137 +104095,9 @@ widthClass = 3;
 },
 {
 axesValues = (
-68,
-4
-);
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 200;
-},
-{
-Axis = Width;
-Location = 87.5;
-}
-);
-}
-);
-exports = 0;
-instanceInterpolations = {
-m005 = 0.26667;
-m007 = 0.2;
-m009 = 0.4;
-m01 = 0.13333;
-};
-name = ExtraLight;
-properties = (
-{
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Martian Mono SemiCondensed";
-}
-);
-}
-);
-weightClass = 200;
-widthClass = 4;
-},
-{
-axesValues = (
-68,
-5
-);
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 200;
-},
-{
-Axis = Width;
-Location = 100;
-}
-);
-}
-);
-exports = 0;
-instanceInterpolations = {
-m005 = 0.13333;
-m007 = 0.4;
-m009 = 0.2;
-m01 = 0.26667;
-};
-name = ExtraLight;
-weightClass = 200;
-},
-{
-axesValues = (
-68,
-6
-);
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 200;
-},
-{
-Axis = Width;
-Location = 112.5;
-}
-);
-}
-);
-exports = 0;
-instanceInterpolations = {
-m007 = 0.6;
-m01 = 0.4;
-};
-name = ExtraLight;
-properties = (
-{
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Martian Mono SemiExpanded";
-}
-);
-}
-);
-weightClass = 200;
-widthClass = 6;
-},
-{
-axesValues = (
 96,
 3
 );
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 300;
-},
-{
-Axis = Width;
-Location = 75;
-}
-);
-}
-);
-exports = 0;
 instanceInterpolations = {
 m005 = 0.8;
 m009 = 0.2;
@@ -105259,137 +104119,9 @@ widthClass = 3;
 },
 {
 axesValues = (
-96,
-4
-);
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 300;
-},
-{
-Axis = Width;
-Location = 87.5;
-}
-);
-}
-);
-exports = 0;
-instanceInterpolations = {
-m005 = 0.53333;
-m007 = 0.06667;
-m009 = 0.13333;
-m01 = 0.26667;
-};
-name = Light;
-properties = (
-{
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Martian Mono SemiCondensed";
-}
-);
-}
-);
-weightClass = 300;
-widthClass = 4;
-},
-{
-axesValues = (
-96,
-5
-);
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 300;
-},
-{
-Axis = Width;
-Location = 100;
-}
-);
-}
-);
-exports = 0;
-instanceInterpolations = {
-m005 = 0.26667;
-m007 = 0.13333;
-m009 = 0.06667;
-m01 = 0.53333;
-};
-name = Light;
-weightClass = 300;
-},
-{
-axesValues = (
-96,
-6
-);
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 300;
-},
-{
-Axis = Width;
-Location = 112.5;
-}
-);
-}
-);
-exports = 0;
-instanceInterpolations = {
-m007 = 0.2;
-m01 = 0.8;
-};
-name = Light;
-properties = (
-{
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Martian Mono SemiExpanded";
-}
-);
-}
-);
-weightClass = 300;
-widthClass = 6;
-},
-{
-axesValues = (
 110,
 3
 );
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 400;
-},
-{
-Axis = Width;
-Location = 75;
-}
-);
-}
-);
-exports = 0;
 instanceInterpolations = {
 m005 = 1;
 };
@@ -105406,110 +104138,6 @@ value = "Martian Mono Condensed";
 }
 );
 widthClass = 3;
-},
-{
-axesValues = (
-110,
-4
-);
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 400;
-},
-{
-Axis = Width;
-Location = 87.5;
-}
-);
-}
-);
-exports = 0;
-instanceInterpolations = {
-m005 = 0.66667;
-m01 = 0.33333;
-};
-name = Regular;
-properties = (
-{
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Martian Mono SemiCondensed";
-}
-);
-}
-);
-widthClass = 4;
-},
-{
-axesValues = (
-110,
-5
-);
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 400;
-},
-{
-Axis = Width;
-Location = 100;
-}
-);
-}
-);
-exports = 0;
-instanceInterpolations = {
-m005 = 0.33333;
-m01 = 0.66667;
-};
-name = Regular;
-},
-{
-axesValues = (
-110,
-6
-);
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 400;
-},
-{
-Axis = Width;
-Location = 112.5;
-}
-);
-}
-);
-exports = 0;
-instanceInterpolations = {
-m01 = 1;
-};
-name = Regular;
-properties = (
-{
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Martian Mono SemiExpanded";
-}
-);
-}
-);
-widthClass = 6;
 },
 {
 axesValues = (
@@ -105518,27 +104146,14 @@ axesValues = (
 );
 customParameters = (
 {
+disabled = 1;
 name = "Rename Glyphs";
 value = (
 "dollar=dollar.bold",
 "cent=cent.bold"
 );
-},
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 500;
-},
-{
-Axis = Width;
-Location = 75;
 }
 );
-}
-);
-exports = 0;
 instanceInterpolations = {
 m005 = 0.77143;
 m006 = 0.22857;
@@ -105560,32 +104175,220 @@ widthClass = 3;
 },
 {
 axesValues = (
-126,
-4
+144,
+3
 );
 customParameters = (
 {
+disabled = 1;
 name = "Rename Glyphs";
 value = (
 "dollar=dollar.bold",
 "cent=cent.bold"
 );
+}
+);
+instanceInterpolations = {
+m005 = 0.51429;
+m006 = 0.48571;
+};
+name = SemiBold;
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Martian Mono Condensed";
+}
+);
+}
+);
+weightClass = 600;
+widthClass = 3;
 },
 {
-name = "Axis Location";
+axesValues = (
+162,
+3
+);
+customParameters = (
+{
+disabled = 1;
+name = "Rename Glyphs";
 value = (
+"dollar=dollar.bold",
+"cent=cent.bold"
+);
+}
+);
+instanceInterpolations = {
+m005 = 0.25714;
+m006 = 0.74286;
+};
+isBold = 1;
+name = Bold;
+properties = (
 {
-Axis = Weight;
-Location = 500;
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Martian Mono Condensed";
+}
+);
+}
+);
+weightClass = 700;
+widthClass = 3;
 },
 {
-Axis = Width;
-Location = 87.5;
+axesValues = (
+180,
+3
+);
+customParameters = (
+{
+disabled = 1;
+name = "Rename Glyphs";
+value = (
+"dollar=dollar.bold",
+"cent=cent.bold"
+);
+}
+);
+instanceInterpolations = {
+m006 = 1;
+};
+name = ExtraBold;
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Martian Mono Condensed";
 }
 );
 }
 );
-exports = 0;
+weightClass = 800;
+widthClass = 3;
+},
+{
+axesValues = (
+40,
+4
+);
+instanceInterpolations = {
+m007 = 0.33333;
+m009 = 0.66667;
+};
+name = Thin;
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Martian Mono SemiCondensed";
+}
+);
+}
+);
+weightClass = 100;
+widthClass = 4;
+},
+{
+axesValues = (
+68,
+4
+);
+instanceInterpolations = {
+m005 = 0.26667;
+m007 = 0.2;
+m009 = 0.4;
+m01 = 0.13333;
+};
+name = ExtraLight;
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Martian Mono SemiCondensed";
+}
+);
+}
+);
+weightClass = 200;
+widthClass = 4;
+},
+{
+axesValues = (
+96,
+4
+);
+instanceInterpolations = {
+m005 = 0.53333;
+m007 = 0.06667;
+m009 = 0.13333;
+m01 = 0.26667;
+};
+name = Light;
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Martian Mono SemiCondensed";
+}
+);
+}
+);
+weightClass = 300;
+widthClass = 4;
+},
+{
+axesValues = (
+110,
+4
+);
+instanceInterpolations = {
+m005 = 0.66667;
+m01 = 0.33333;
+};
+name = Regular;
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Martian Mono SemiCondensed";
+}
+);
+}
+);
+widthClass = 4;
+},
+{
+axesValues = (
+126,
+4
+);
+customParameters = (
+{
+disabled = 1;
+name = "Rename Glyphs";
+value = (
+"dollar=dollar.bold",
+"cent=cent.bold"
+);
+}
+);
 instanceInterpolations = {
 m002 = 0.07619;
 m005 = 0.51429;
@@ -105609,149 +104412,19 @@ widthClass = 4;
 },
 {
 axesValues = (
-126,
-5
-);
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 500;
-},
-{
-Axis = Width;
-Location = 100;
-}
-);
-}
-);
-exports = 0;
-instanceInterpolations = {
-m002 = 0.15238;
-m005 = 0.25714;
-m006 = 0.07619;
-m01 = 0.51429;
-};
-name = Medium;
-weightClass = 500;
-},
-{
-axesValues = (
-126,
-6
-);
-customParameters = (
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 500;
-},
-{
-Axis = Width;
-Location = 112.5;
-}
-);
-}
-);
-exports = 0;
-instanceInterpolations = {
-m002 = 0.22857;
-m01 = 0.77143;
-};
-name = Medium;
-properties = (
-{
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Martian Mono SemiExpanded";
-}
-);
-}
-);
-weightClass = 500;
-widthClass = 6;
-},
-{
-axesValues = (
-144,
-3
-);
-customParameters = (
-{
-name = "Rename Glyphs";
-value = (
-"dollar=dollar.bold",
-"cent=cent.bold"
-);
-},
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 600;
-},
-{
-Axis = Width;
-Location = 75;
-}
-);
-}
-);
-exports = 0;
-instanceInterpolations = {
-m005 = 0.51429;
-m006 = 0.48571;
-};
-name = SemiBold;
-properties = (
-{
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Martian Mono Condensed";
-}
-);
-}
-);
-weightClass = 600;
-widthClass = 3;
-},
-{
-axesValues = (
 144,
 4
 );
 customParameters = (
 {
+disabled = 1;
 name = "Rename Glyphs";
 value = (
 "dollar=dollar.bold",
 "cent=cent.bold"
 );
-},
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 600;
-},
-{
-Axis = Width;
-Location = 87.5;
 }
 );
-}
-);
-exports = 0;
 instanceInterpolations = {
 m002 = 0.1619;
 m005 = 0.34286;
@@ -105775,32 +104448,145 @@ widthClass = 4;
 },
 {
 axesValues = (
-144,
-5
+162,
+4
 );
 customParameters = (
 {
+disabled = 1;
 name = "Rename Glyphs";
 value = (
 "dollar=dollar.bold",
 "cent=cent.bold"
 );
+}
+);
+instanceInterpolations = {
+m002 = 0.24762;
+m005 = 0.17143;
+m006 = 0.49524;
+m01 = 0.08571;
+};
+isBold = 1;
+name = Bold;
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Martian Mono SemiCondensed";
+}
+);
+}
+);
+weightClass = 700;
+widthClass = 4;
 },
 {
-name = "Axis Location";
+axesValues = (
+180,
+4
+);
+customParameters = (
+{
+disabled = 1;
+name = "Rename Glyphs";
 value = (
+"dollar=dollar.bold",
+"cent=cent.bold"
+);
+}
+);
+instanceInterpolations = {
+m002 = 0.33333;
+m006 = 0.66667;
+};
+name = ExtraBold;
+properties = (
 {
-Axis = Weight;
-Location = 600;
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Martian Mono SemiCondensed";
+}
+);
+}
+);
+weightClass = 800;
+widthClass = 4;
 },
 {
-Axis = Width;
-Location = 100;
-}
+axesValues = (
+40,
+5
 );
-}
+instanceInterpolations = {
+m007 = 0.66667;
+m009 = 0.33333;
+};
+name = Thin;
+weightClass = 100;
+},
+{
+axesValues = (
+68,
+5
 );
-exports = 0;
+instanceInterpolations = {
+m005 = 0.13333;
+m007 = 0.4;
+m009 = 0.2;
+m01 = 0.26667;
+};
+name = ExtraLight;
+weightClass = 200;
+},
+{
+axesValues = (
+96,
+5
+);
+instanceInterpolations = {
+m005 = 0.26667;
+m007 = 0.13333;
+m009 = 0.06667;
+m01 = 0.53333;
+};
+name = Light;
+weightClass = 300;
+},
+{
+axesValues = (
+110,
+5
+);
+instanceInterpolations = {
+m005 = 0.33333;
+m01 = 0.66667;
+};
+name = Regular;
+},
+{
+axesValues = (
+126,
+5
+);
+instanceInterpolations = {
+m002 = 0.15238;
+m005 = 0.25714;
+m006 = 0.07619;
+m01 = 0.51429;
+};
+name = Medium;
+weightClass = 500;
+},
+{
+axesValues = (
+144,
+5
+);
 instanceInterpolations = {
 m002 = 0.32381;
 m005 = 0.17143;
@@ -105812,32 +104598,173 @@ weightClass = 600;
 },
 {
 axesValues = (
-144,
-6
+162,
+5
 );
 customParameters = (
 {
+disabled = 1;
 name = "Rename Glyphs";
 value = (
 "dollar=dollar.bold",
 "cent=cent.bold"
 );
+}
+);
+instanceInterpolations = {
+m002 = 0.49524;
+m005 = 0.08571;
+m006 = 0.24762;
+m01 = 0.17143;
+};
+isBold = 1;
+name = Bold;
+weightClass = 700;
 },
 {
-name = "Axis Location";
+axesValues = (
+180,
+5
+);
+customParameters = (
+{
+disabled = 1;
+name = "Rename Glyphs";
 value = (
-{
-Axis = Weight;
-Location = 600;
+"dollar=dollar.bold",
+"cent=cent.bold"
+);
+}
+);
+instanceInterpolations = {
+m002 = 0.66667;
+m006 = 0.33333;
+};
+name = ExtraBold;
+weightClass = 800;
 },
 {
-Axis = Width;
-Location = 112.5;
+axesValues = (
+40,
+6
+);
+instanceInterpolations = {
+m007 = 1;
+};
+name = Thin;
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Martian Mono SemiExpanded";
 }
 );
 }
 );
-exports = 0;
+weightClass = 100;
+widthClass = 6;
+},
+{
+axesValues = (
+68,
+6
+);
+instanceInterpolations = {
+m007 = 0.6;
+m01 = 0.4;
+};
+name = ExtraLight;
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Martian Mono SemiExpanded";
+}
+);
+}
+);
+weightClass = 200;
+widthClass = 6;
+},
+{
+axesValues = (
+96,
+6
+);
+instanceInterpolations = {
+m007 = 0.2;
+m01 = 0.8;
+};
+name = Light;
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Martian Mono SemiExpanded";
+}
+);
+}
+);
+weightClass = 300;
+widthClass = 6;
+},
+{
+axesValues = (
+110,
+6
+);
+instanceInterpolations = {
+m01 = 1;
+};
+name = Regular;
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Martian Mono SemiExpanded";
+}
+);
+}
+);
+widthClass = 6;
+},
+{
+axesValues = (
+126,
+6
+);
+instanceInterpolations = {
+m002 = 0.22857;
+m01 = 0.77143;
+};
+name = Medium;
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Martian Mono SemiExpanded";
+}
+);
+}
+);
+weightClass = 500;
+widthClass = 6;
+},
+{
+axesValues = (
+144,
+6
+);
 instanceInterpolations = {
 m002 = 0.48571;
 m01 = 0.51429;
@@ -105860,176 +104787,23 @@ widthClass = 6;
 {
 axesValues = (
 162,
-3
-);
-customParameters = (
-{
-name = "Rename Glyphs";
-value = (
-"dollar=dollar.bold",
-"cent=cent.bold"
-);
-},
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 700;
-},
-{
-Axis = Width;
-Location = 75;
-}
-);
-}
-);
-exports = 0;
-instanceInterpolations = {
-m005 = 0.25714;
-m006 = 0.74286;
-};
-isBold = 1;
-linkStyle = "Condensed Regular";
-name = Bold;
-properties = (
-{
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Martian Mono Condensed";
-}
-);
-}
-);
-weightClass = 700;
-widthClass = 3;
-},
-{
-axesValues = (
-162,
-4
-);
-customParameters = (
-{
-name = "Rename Glyphs";
-value = (
-"dollar=dollar.bold",
-"cent=cent.bold"
-);
-},
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 700;
-},
-{
-Axis = Width;
-Location = 87.5;
-}
-);
-}
-);
-exports = 0;
-instanceInterpolations = {
-m002 = 0.24762;
-m005 = 0.17143;
-m006 = 0.49524;
-m01 = 0.08571;
-};
-isBold = 1;
-linkStyle = "SemiCondensed Regular";
-name = Bold;
-properties = (
-{
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Martian Mono SemiCondensed";
-}
-);
-}
-);
-weightClass = 700;
-widthClass = 4;
-},
-{
-axesValues = (
-162,
-5
-);
-customParameters = (
-{
-name = "Rename Glyphs";
-value = (
-"dollar=dollar.bold",
-"cent=cent.bold"
-);
-},
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 700;
-},
-{
-Axis = Width;
-Location = 100;
-}
-);
-}
-);
-exports = 0;
-instanceInterpolations = {
-m002 = 0.49524;
-m005 = 0.08571;
-m006 = 0.24762;
-m01 = 0.17143;
-};
-isBold = 1;
-linkStyle = Regular;
-name = Bold;
-weightClass = 700;
-},
-{
-axesValues = (
-162,
 6
 );
 customParameters = (
 {
+disabled = 1;
 name = "Rename Glyphs";
 value = (
 "dollar=dollar.bold",
 "cent=cent.bold"
 );
-},
-{
-name = "Axis Location";
-value = (
-{
-Axis = Weight;
-Location = 700;
-},
-{
-Axis = Width;
-Location = 112.5;
 }
 );
-}
-);
-exports = 0;
 instanceInterpolations = {
 m002 = 0.74286;
 m01 = 0.25714;
 };
 isBold = 1;
-linkStyle = "SemiExpanded Regular";
 name = Bold;
 properties = (
 {
@@ -106048,10 +104822,530 @@ widthClass = 6;
 {
 axesValues = (
 180,
+6
+);
+customParameters = (
+{
+disabled = 1;
+name = "Rename Glyphs";
+value = (
+"dollar=dollar.bold",
+"cent=cent.bold"
+);
+}
+);
+instanceInterpolations = {
+m002 = 1;
+};
+name = ExtraBold;
+properties = (
+{
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Martian Mono SemiExpanded";
+}
+);
+}
+);
+weightClass = 800;
+widthClass = 6;
+},
+{
+axesValues = (
+40,
 3
 );
 customParameters = (
 {
+disabled = 1;
+name = "Axis Location";
+value = (
+{
+Axis = Weight;
+Location = 100;
+},
+{
+Axis = Width;
+Location = 75;
+}
+);
+},
+{
+disabled = 1;
+name = "Add Feature";
+value = "liga;pos @threeChars <1200 0 1200 0>;\012pos @twoChars <600 0 600 0>;\012sub H by X;";
+},
+{
+disabled = 1;
+name = "Replace Feature";
+value = "liga;pos @threeChars <1500 0 1500 0 (wdth:3) 1200 0 1200 0>;\012pos @twoChars <750 0 750 0 (wdth:3) 600 0 600 0>;\012sub H by O;";
+}
+);
+exports = 0;
+instanceInterpolations = {
+m009 = 1;
+};
+name = "Cn Th";
+weightClass = 100;
+widthClass = 3;
+},
+{
+axesValues = (
+40,
+4
+);
+customParameters = (
+{
+disabled = 1;
+name = "Axis Location";
+value = (
+{
+Axis = Weight;
+Location = 100;
+},
+{
+Axis = Width;
+Location = 87.5;
+}
+);
+}
+);
+exports = 0;
+instanceInterpolations = {
+m007 = 0.33333;
+m009 = 0.66667;
+};
+name = "Nr Th";
+weightClass = 100;
+widthClass = 4;
+},
+{
+axesValues = (
+40,
+5
+);
+customParameters = (
+{
+disabled = 1;
+name = "Axis Location";
+value = (
+{
+Axis = Weight;
+Location = 100;
+},
+{
+Axis = Width;
+Location = 100;
+}
+);
+}
+);
+exports = 0;
+instanceInterpolations = {
+m007 = 0.66667;
+m009 = 0.33333;
+};
+name = "Std Th";
+weightClass = 100;
+},
+{
+axesValues = (
+40,
+6
+);
+customParameters = (
+{
+disabled = 1;
+name = "Axis Location";
+value = (
+{
+Axis = Weight;
+Location = 100;
+},
+{
+Axis = Width;
+Location = 112.5;
+}
+);
+}
+);
+exports = 0;
+instanceInterpolations = {
+m007 = 1;
+};
+name = "sWd Th";
+weightClass = 100;
+widthClass = 6;
+},
+{
+axesValues = (
+68,
+3
+);
+customParameters = (
+{
+disabled = 1;
+name = "Axis Location";
+value = (
+{
+Axis = Weight;
+Location = 200;
+},
+{
+Axis = Width;
+Location = 75;
+}
+);
+}
+);
+exports = 0;
+instanceInterpolations = {
+m005 = 0.4;
+m009 = 0.6;
+};
+name = "Cn xLt";
+weightClass = 200;
+widthClass = 3;
+},
+{
+axesValues = (
+68,
+4
+);
+customParameters = (
+{
+disabled = 1;
+name = "Axis Location";
+value = (
+{
+Axis = Weight;
+Location = 200;
+},
+{
+Axis = Width;
+Location = 87.5;
+}
+);
+}
+);
+exports = 0;
+instanceInterpolations = {
+m005 = 0.26667;
+m007 = 0.2;
+m009 = 0.4;
+m01 = 0.13333;
+};
+name = "Nr xLt";
+weightClass = 200;
+widthClass = 4;
+},
+{
+axesValues = (
+68,
+5
+);
+customParameters = (
+{
+disabled = 1;
+name = "Axis Location";
+value = (
+{
+Axis = Weight;
+Location = 200;
+},
+{
+Axis = Width;
+Location = 100;
+}
+);
+}
+);
+exports = 0;
+instanceInterpolations = {
+m005 = 0.13333;
+m007 = 0.4;
+m009 = 0.2;
+m01 = 0.26667;
+};
+name = "Std xLt";
+weightClass = 200;
+},
+{
+axesValues = (
+68,
+6
+);
+customParameters = (
+{
+disabled = 1;
+name = "Axis Location";
+value = (
+{
+Axis = Weight;
+Location = 200;
+},
+{
+Axis = Width;
+Location = 112.5;
+}
+);
+}
+);
+exports = 0;
+instanceInterpolations = {
+m007 = 0.6;
+m01 = 0.4;
+};
+name = "sWd xLt";
+weightClass = 200;
+widthClass = 6;
+},
+{
+axesValues = (
+96,
+3
+);
+customParameters = (
+{
+disabled = 1;
+name = "Axis Location";
+value = (
+{
+Axis = Weight;
+Location = 300;
+},
+{
+Axis = Width;
+Location = 75;
+}
+);
+}
+);
+exports = 0;
+instanceInterpolations = {
+m005 = 0.8;
+m009 = 0.2;
+};
+name = "Cn Lt";
+weightClass = 300;
+widthClass = 3;
+},
+{
+axesValues = (
+96,
+4
+);
+customParameters = (
+{
+disabled = 1;
+name = "Axis Location";
+value = (
+{
+Axis = Weight;
+Location = 300;
+},
+{
+Axis = Width;
+Location = 87.5;
+}
+);
+}
+);
+exports = 0;
+instanceInterpolations = {
+m005 = 0.53333;
+m007 = 0.06667;
+m009 = 0.13333;
+m01 = 0.26667;
+};
+name = "Nr Lt";
+weightClass = 300;
+widthClass = 4;
+},
+{
+axesValues = (
+96,
+5
+);
+customParameters = (
+{
+disabled = 1;
+name = "Axis Location";
+value = (
+{
+Axis = Weight;
+Location = 300;
+},
+{
+Axis = Width;
+Location = 100;
+}
+);
+}
+);
+exports = 0;
+instanceInterpolations = {
+m005 = 0.26667;
+m007 = 0.13333;
+m009 = 0.06667;
+m01 = 0.53333;
+};
+name = "Std Lt";
+weightClass = 300;
+},
+{
+axesValues = (
+96,
+6
+);
+customParameters = (
+{
+disabled = 1;
+name = "Axis Location";
+value = (
+{
+Axis = Weight;
+Location = 300;
+},
+{
+Axis = Width;
+Location = 112.5;
+}
+);
+}
+);
+exports = 0;
+instanceInterpolations = {
+m007 = 0.2;
+m01 = 0.8;
+};
+name = "sWd Lt";
+weightClass = 300;
+widthClass = 6;
+},
+{
+axesValues = (
+110,
+3
+);
+customParameters = (
+{
+disabled = 1;
+name = "Axis Location";
+value = (
+{
+Axis = Weight;
+Location = 400;
+},
+{
+Axis = Width;
+Location = 75;
+}
+);
+}
+);
+exports = 0;
+instanceInterpolations = {
+m005 = 1;
+};
+name = "Cn Rg";
+widthClass = 3;
+},
+{
+axesValues = (
+110,
+4
+);
+customParameters = (
+{
+disabled = 1;
+name = "Axis Location";
+value = (
+{
+Axis = Weight;
+Location = 400;
+},
+{
+Axis = Width;
+Location = 87.5;
+}
+);
+}
+);
+exports = 0;
+instanceInterpolations = {
+m005 = 0.66667;
+m01 = 0.33333;
+};
+name = "Nr Rg";
+widthClass = 4;
+},
+{
+axesValues = (
+110,
+5
+);
+customParameters = (
+{
+disabled = 1;
+name = "Axis Location";
+value = (
+{
+Axis = Weight;
+Location = 400;
+},
+{
+Axis = Width;
+Location = 100;
+}
+);
+}
+);
+exports = 0;
+instanceInterpolations = {
+m005 = 0.33333;
+m01 = 0.66667;
+};
+name = "Std Rg";
+},
+{
+axesValues = (
+110,
+6
+);
+customParameters = (
+{
+disabled = 1;
+name = "Axis Location";
+value = (
+{
+Axis = Weight;
+Location = 400;
+},
+{
+Axis = Width;
+Location = 112.5;
+}
+);
+}
+);
+exports = 0;
+instanceInterpolations = {
+m01 = 1;
+};
+name = "sWd Rg";
+widthClass = 6;
+},
+{
+axesValues = (
+132,
+3
+);
+customParameters = (
+{
+disabled = 1;
 name = "Rename Glyphs";
 value = (
 "dollar=dollar.bold",
@@ -106059,6 +105353,309 @@ value = (
 );
 },
 {
+disabled = 1;
+name = "Axis Location";
+value = (
+{
+Axis = Weight;
+Location = 500;
+},
+{
+Axis = Width;
+Location = 75;
+}
+);
+}
+);
+exports = 0;
+instanceInterpolations = {
+m005 = 0.68571;
+m006 = 0.31429;
+};
+name = "Cn Md";
+weightClass = 500;
+widthClass = 3;
+},
+{
+axesValues = (
+132,
+4
+);
+customParameters = (
+{
+disabled = 1;
+name = "Rename Glyphs";
+value = (
+"dollar=dollar.bold",
+"cent=cent.bold"
+);
+},
+{
+disabled = 1;
+name = "Axis Location";
+value = (
+{
+Axis = Weight;
+Location = 500;
+},
+{
+Axis = Width;
+Location = 87.5;
+}
+);
+}
+);
+exports = 0;
+instanceInterpolations = {
+m002 = 0.10476;
+m005 = 0.45714;
+m006 = 0.20952;
+m01 = 0.22857;
+};
+name = "Nr Md";
+weightClass = 500;
+widthClass = 4;
+},
+{
+axesValues = (
+132,
+5
+);
+customParameters = (
+{
+disabled = 1;
+name = "Axis Location";
+value = (
+{
+Axis = Weight;
+Location = 500;
+},
+{
+Axis = Width;
+Location = 100;
+}
+);
+}
+);
+exports = 0;
+instanceInterpolations = {
+m002 = 0.20952;
+m005 = 0.22857;
+m006 = 0.10476;
+m01 = 0.45714;
+};
+name = "Std Md";
+weightClass = 500;
+},
+{
+axesValues = (
+132,
+6
+);
+customParameters = (
+{
+disabled = 1;
+name = "Axis Location";
+value = (
+{
+Axis = Weight;
+Location = 500;
+},
+{
+Axis = Width;
+Location = 112.5;
+}
+);
+}
+);
+exports = 0;
+instanceInterpolations = {
+m002 = 0.31429;
+m01 = 0.68571;
+};
+name = "sWd Md";
+weightClass = 500;
+widthClass = 6;
+},
+{
+axesValues = (
+156,
+3
+);
+customParameters = (
+{
+disabled = 1;
+name = "Rename Glyphs";
+value = (
+"dollar=dollar.bold",
+"cent=cent.bold"
+);
+},
+{
+disabled = 1;
+name = "Axis Location";
+value = (
+{
+Axis = Weight;
+Location = 700;
+},
+{
+Axis = Width;
+Location = 75;
+}
+);
+}
+);
+exports = 0;
+instanceInterpolations = {
+m005 = 0.34286;
+m006 = 0.65714;
+};
+isBold = 1;
+linkStyle = "Cn Rg";
+name = "Cn Bd";
+weightClass = 700;
+widthClass = 3;
+},
+{
+axesValues = (
+156,
+4
+);
+customParameters = (
+{
+disabled = 1;
+name = "Rename Glyphs";
+value = (
+"dollar=dollar.bold",
+"cent=cent.bold"
+);
+},
+{
+disabled = 1;
+name = "Axis Location";
+value = (
+{
+Axis = Weight;
+Location = 700;
+},
+{
+Axis = Width;
+Location = 87.5;
+}
+);
+}
+);
+exports = 0;
+instanceInterpolations = {
+m002 = 0.21905;
+m005 = 0.22857;
+m006 = 0.4381;
+m01 = 0.11429;
+};
+isBold = 1;
+linkStyle = "Nr Rg";
+name = "Nr Bd";
+weightClass = 700;
+widthClass = 4;
+},
+{
+axesValues = (
+156,
+5
+);
+customParameters = (
+{
+disabled = 1;
+name = "Rename Glyphs";
+value = (
+"dollar=dollar.bold",
+"cent=cent.bold"
+);
+},
+{
+disabled = 1;
+name = "Axis Location";
+value = (
+{
+Axis = Weight;
+Location = 700;
+},
+{
+Axis = Width;
+Location = 100;
+}
+);
+}
+);
+exports = 0;
+instanceInterpolations = {
+m002 = 0.4381;
+m005 = 0.11429;
+m006 = 0.21905;
+m01 = 0.22857;
+};
+isBold = 1;
+linkStyle = "Std Rg";
+name = "Std Bd";
+weightClass = 700;
+},
+{
+axesValues = (
+156,
+6
+);
+customParameters = (
+{
+disabled = 1;
+name = "Rename Glyphs";
+value = (
+"dollar=dollar.bold",
+"cent=cent.bold"
+);
+},
+{
+disabled = 1;
+name = "Axis Location";
+value = (
+{
+Axis = Weight;
+Location = 700;
+},
+{
+Axis = Width;
+Location = 112.5;
+}
+);
+}
+);
+exports = 0;
+instanceInterpolations = {
+m002 = 0.65714;
+m01 = 0.34286;
+};
+isBold = 1;
+linkStyle = "sWd Rg";
+name = "sWd Bd";
+weightClass = 700;
+widthClass = 6;
+},
+{
+axesValues = (
+180,
+3
+);
+customParameters = (
+{
+disabled = 1;
+name = "Rename Glyphs";
+value = (
+"dollar=dollar.bold",
+"cent=cent.bold"
+);
+},
+{
+disabled = 1;
 name = "Axis Location";
 value = (
 {
@@ -106076,18 +105673,7 @@ exports = 0;
 instanceInterpolations = {
 m006 = 1;
 };
-name = ExtraBold;
-properties = (
-{
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Martian Mono Condensed";
-}
-);
-}
-);
+name = "Cn xBd";
 weightClass = 800;
 widthClass = 3;
 },
@@ -106098,6 +105684,7 @@ axesValues = (
 );
 customParameters = (
 {
+disabled = 1;
 name = "Rename Glyphs";
 value = (
 "dollar=dollar.bold",
@@ -106105,6 +105692,7 @@ value = (
 );
 },
 {
+disabled = 1;
 name = "Axis Location";
 value = (
 {
@@ -106123,18 +105711,7 @@ instanceInterpolations = {
 m002 = 0.33333;
 m006 = 0.66667;
 };
-name = ExtraBold;
-properties = (
-{
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Martian Mono SemiCondensed";
-}
-);
-}
-);
+name = "Nr xBd";
 weightClass = 800;
 widthClass = 4;
 },
@@ -106145,6 +105722,7 @@ axesValues = (
 );
 customParameters = (
 {
+disabled = 1;
 name = "Rename Glyphs";
 value = (
 "dollar=dollar.bold",
@@ -106152,6 +105730,7 @@ value = (
 );
 },
 {
+disabled = 1;
 name = "Axis Location";
 value = (
 {
@@ -106170,7 +105749,7 @@ instanceInterpolations = {
 m002 = 0.66667;
 m006 = 0.33333;
 };
-name = ExtraBold;
+name = "Std xBd";
 weightClass = 800;
 },
 {
@@ -106180,6 +105759,7 @@ axesValues = (
 );
 customParameters = (
 {
+disabled = 1;
 name = "Rename Glyphs";
 value = (
 "dollar=dollar.bold",
@@ -106187,6 +105767,7 @@ value = (
 );
 },
 {
+disabled = 1;
 name = "Axis Location";
 value = (
 {
@@ -106204,18 +105785,7 @@ exports = 0;
 instanceInterpolations = {
 m002 = 1;
 };
-name = ExtraBold;
-properties = (
-{
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Martian Mono SemiExpanded";
-}
-);
-}
-);
+name = "sWd xBd";
 weightClass = 800;
 widthClass = 6;
 }
@@ -106245,24 +105815,20 @@ key = licenses;
 values = (
 {
 language = dflt;
-value = "SIL Open Font License 1.1";
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
 }
 );
 },
 {
 key = licenseURL;
-value = "http://scripts.sil.org/OFL";
-},
-{
-key = versionString;
-value = "Version 0.9.2";
+value = "https://scripts.sil.org/OFL";
 },
 {
 key = copyrights;
 values = (
 {
 language = dflt;
-value = "Copyright © 2020, Roman Shamin (al4emist.artway@gmail.com)";
+value = "Copyright 2020 The Martian Mono Project Authors (https://github.com/evilmartians/mono)";
 }
 );
 },
