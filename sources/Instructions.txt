@@ -22,7 +22,6 @@ So here is the process to keep the two versions similar.
 FONT INFOS /
 - parameters: 
 	· isFixedPitch to activate
-	· Axis Mapping to activate 
 	· Remove The VersionString
 	· Check if the Copyright follows this pattern:
 	  Copyright 2020 The Martian Mono Project Authors (https://github.com/evilmartians/mono)
@@ -59,14 +58,5 @@ To move from one version to the other, this is the process:
 	· Uncheck export for dollar.bold and cent.bold
 	· Rename dollar and cent dollarmartian and centmartian and uncheck export
 	· Rename dollarGF and centGF dollar and cent and check export
-
-Decomposed glyphs:
-A
-H
-Dollar
-HBar
-hBar
-Euro
-Yen
 
 
