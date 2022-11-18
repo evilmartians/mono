@@ -1,0 +1,62 @@
+This repo contains two different sources:
+- Martian Mono.glyphs (designer file)
+- MartianMono.glyphs (GF)
+
+The reason is that the Martian font is for sale on another platform, and the Martian Mono has to match it in terms of compatibility, and could not follow the GF specs (this mainly concerns the names of the masters and instances).
+
+For exporting the GF fonts, we need to remove "GF" in the file name and in the config.yaml
+
+** PROCESS **
+
+So here is the process to keep the two versions similar.
+
+1- The GF team member sets up the MartianMonoGF.glyphs file, following the GF specs. He/she/they deactivates the useless and/or problematic for export parameters (deactivate them, do not delete them)
+2- He/she/they creates a copy of this file, which will be named MartianMono.glyphs and will reactivate the author's settings and rename the masters according to his model.
+3- The author makes the changes for the update
+- He creates a copy, and following this guide, reactivates the settings according to the GF specs.
+4- The GF team member checks that everything is good, and re-exports the font.
+
+
+** INSTRUCTIONS **
+
+FONT INFOS /
+- parameters: 
+	· isFixedPitch to activate
+	· Remove The VersionString
+	· Check if the Copyright follows this pattern:
+	  Copyright 2020 The Martian Mono Project Authors (https://github.com/evilmartians/mono)
+	· Check if Variable Font Origin is set on SemiExpanded Regular
+	· Licence is:
+	  This Font Software is licensed under the SIL Open Font License, Version 1.1. 
+	  This license is available with a FAQ at: https://scripts.sil.org/OFL
+	· Licence URL is: https://scripts.sil.org/OFL
+	· Don't forget to increase the version number
+
+MASTERS / 
+Master names: 
+	Cn Th -> Condensed Thin 
+	Cn Rg -> Condensed Regular
+	Cn xBd -> Condensed ExtraBold
+	sWd Th -> SemiExpanded Thin
+	sWd Rg -> SemiExpanded Regular
+	sWd xBd -> SemiExpanded ExtraBold
+
+
+INSTANCES / 
+	· Deactivate authors instances, activate GF instances
+
+FEATURES /
+	· Deactivate rlig
+	· Removed threechars and twochars classes (create a bug during export)
+
+
+GLYPHSET /
+In the non-GF version, rlig feature + rename glyphs in instances is used. 
+Fontmake doesn't support this, so in GF version, we use alternate layers.
+To move from one version to the other, this is the process:
+
+	· Uncheck export for dollar.bold and cent.bold
+	· Rename dollar and cent dollarmartian and centmartian and uncheck export
+	· Rename dollarGF and centGF dollar and cent and check export
+
+
