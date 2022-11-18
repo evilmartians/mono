@@ -6,11 +6,11 @@ Martian Mono is a monospaced version of the Martian Grotesk font for code style 
 
 ---
 
-**Get your [Martian Grotesk free trial](https://romanshamin.gumroad.com/l/martian-grotesk-font) on Gumroad.**
+**Get your [Martian Grotesk free trial](https://romanshamin.gumroad.com/l/martian-grotesk-font) on Gumroad or [buy it on MyFonts](https://www.myfonts.com/collections/martian-grotesk-font-martian-fonts).**
 
 ---
 
-<img src="./documentation/martian-mono-0.9.1-character-set.png" width="830">
+<img src="./documentation/martian-mono-character-set.png" width="830">
 
 The typeface features a tall x-height, and it has vertical metrics which guarantee equal space is present above the cap height and under the baseline. The latter makes this typeface an on-screen workhorse: it is evenly placed on buttons, inputs, lists, and forms. When coupled together, all the above features make Martian Mono a reasonable choice for any user interface design.
 
@@ -62,12 +62,19 @@ For the best results use the following pairs of size / line height:
 * 12.5 / 14 (or 18, 22, etc.) px
 * 15 / 20 (or 24, 28, etc.) px
 
+## Roadmap
+
+* Basic Cyrillic script (WIP, [watch the process](https://twitter.com/romanshamin_en) on Twitter)
+* Coding ligatures (blocked by [Glyphs app bug](https://forum.glyphsapp.com/t/glyphs-crashes-because-of-pos-rule/22838/17))
+* Powerline symbols
+* Italics
+
 ## Support
 
 If you want to support Martian Mono:
 
 * Spread the word on social media
-* Buy [Martian Grotesk](https://romanshamin.gumroad.com/l/martian-grotesk-font)
+* Buy Martian Grotesk [on MyFonts](https://www.myfonts.com/collections/martian-grotesk-font-martian-fonts) or [Gumroad](https://romanshamin.gumroad.com/l/martian-grotesk-font)
 * Consider [becoming a patron](https://www.patreon.com/romanshamin)
 
 I’m sincerely grateful for any support!
