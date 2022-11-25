@@ -3,7 +3,6 @@ venv
 myenv
 build.stamp
 proof
-fonts
 sources/master_ufo
 node_modules
 package-lock.json
