@@ -4,7 +4,7 @@ axisOrder:
   - wdth
   - wght
 familyName: Martian Mono
-buildStatic: false
+buildStatic: true
 stat:
   MartianMono[wdth,wght].ttf:
   - name: Width
