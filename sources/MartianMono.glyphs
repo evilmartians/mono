@@ -81,6 +81,7 @@ name = isFixedPitch;
 value = 1;
 },
 {
+disabled = 1;
 name = "Axis Mappings";
 value = {
 wdth = {
@@ -300,6 +301,7 @@ sub cent by cent.bold;
 
 #endif
 ";
+disabled = 1;
 tag = rlig;
 },
 {
