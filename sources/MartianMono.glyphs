@@ -1,9 +1,6 @@
 {
 .appVersion = "3148";
 .formatVersion = 3;
-DisplayStrings = (
-"0"
-);
 axes = (
 {
 name = Weight;
@@ -19,16 +16,6 @@ classes = (
 automatic = 1;
 code = "A Aacute Abreve Acaron Acircumflex Adieresis Agrave Amacron Aogonek Aring Aringacute Atilde AE AEacute B C Cacute Ccaron Ccedilla Cdotaccent D Eth Dcaron Dcroat Ddotbelow E Eacute Ecaron Ecircumflex Edieresis Edotaccent Egrave Emacron Eogonek Etilde Schwa F G Gbreve Gcaron Gcommaaccent Gdotaccent H Hbar Hdotbelow I IJ Iacute Icircumflex Idieresis Idotaccent Idotbelow Igrave Imacron Iogonek Itilde J Jacute K Kcommaaccent L Lacute Lcaron Lcommaaccent Ldot Lslash M N Nacute Ncaron Ncommaaccent Nhookleft Ntilde Eng O Oacute Ocircumflex Odieresis Odotbelow Ograve Ohungarumlaut Omacron Oslash Oslashacute Otilde OE P Thorn Q R Racute Rcaron Rcommaaccent S Sacute Saltillo Scaron Scedilla Scommaaccent Sdotbelow Germandbls T Tbar Tcaron Tcedilla Tcommaaccent Tdotbelow U Uacute Ubreve Ucircumflex Udieresis Udotbelow Ugrave Uhungarumlaut Umacron Uogonek Uring Utilde V W Wacute Wcircumflex Wdieresis Wgrave X Y Yacute Ycircumflex Ydieresis Ygrave Ymacron Ytilde Z Zacute Zcaron Zdotaccent Zdotbelow";
 name = Uppercase;
-},
-{
-code = "# $[tags contains \"three_chars\"]
-";
-name = threeChars;
-},
-{
-code = "# $[tags contains \"two_chars\"]
-";
-name = twoChars;
 }
 );
 customParameters = (
@@ -81260,7 +81247,7 @@ unicode = 8800;
 },
 {
 glyphname = greater;
-lastChange = "2021-08-28 18:59:53 +0000";
+lastChange = "2022-11-25 08:22:20 +0000";
 layers = (
 {
 background = {
@@ -81274,22 +81261,6 @@ ref = hyphen;
 );
 };
 layerId = m01;
-shapes = (
-{
-piece = {
-"Vertical Shift" = 220;
-};
-ref = _part.greater;
-},
-{
-piece = {
-"Vertical Shift" = 220;
-};
-pos = (0,700);
-ref = _part.greater;
-scale = (1,-1);
-}
-);
 width = 750;
 },
 {
@@ -81301,22 +81272,6 @@ ref = hyphen;
 );
 };
 layerId = m002;
-shapes = (
-{
-piece = {
-"Vertical Shift" = 220;
-};
-ref = _part.greater;
-},
-{
-piece = {
-"Vertical Shift" = 220;
-};
-pos = (0,700);
-ref = _part.greater;
-scale = (1,-1);
-}
-);
 width = 750;
 },
 {
@@ -81328,22 +81283,6 @@ ref = hyphen;
 );
 };
 layerId = m005;
-shapes = (
-{
-piece = {
-"Vertical Shift" = 220;
-};
-ref = _part.greater;
-},
-{
-piece = {
-"Vertical Shift" = 220;
-};
-pos = (0,700);
-ref = _part.greater;
-scale = (1,-1);
-}
-);
 width = 600;
 },
 {
@@ -81355,22 +81294,6 @@ ref = hyphen;
 );
 };
 layerId = m006;
-shapes = (
-{
-piece = {
-"Vertical Shift" = 220;
-};
-ref = _part.greater;
-},
-{
-piece = {
-"Vertical Shift" = 220;
-};
-pos = (0,700);
-ref = _part.greater;
-scale = (1,-1);
-}
-);
 width = 600;
 },
 {
@@ -81382,22 +81305,6 @@ ref = hyphen;
 );
 };
 layerId = m007;
-shapes = (
-{
-piece = {
-"Vertical Shift" = 220;
-};
-ref = _part.greater;
-},
-{
-piece = {
-"Vertical Shift" = 220;
-};
-pos = (0,700);
-ref = _part.greater;
-scale = (1,-1);
-}
-);
 width = 750;
 },
 {
@@ -81409,22 +81316,6 @@ ref = hyphen;
 );
 };
 layerId = m009;
-shapes = (
-{
-piece = {
-"Vertical Shift" = 220;
-};
-ref = _part.greater;
-},
-{
-piece = {
-"Vertical Shift" = 220;
-};
-pos = (0,700);
-ref = _part.greater;
-scale = (1,-1);
-}
-);
 width = 600;
 }
 );
@@ -93015,272 +92906,6 @@ nodes = (
 }
 );
 width = 750;
-}
-);
-},
-{
-export = 0;
-glyphname = _part.greater;
-lastChange = "2022-11-19 16:34:33 +0000";
-layers = (
-{
-anchors = (
-{
-name = _connect;
-pos = (630,350);
-},
-{
-name = connect;
-pos = (630,350);
-}
-);
-background = {
-shapes = (
-{
-ref = "en-cy";
-}
-);
-};
-guides = (
-{
-pos = (302,350);
-}
-);
-layerId = m01;
-partSelection = {
-"Vertical Shift" = 1;
-};
-shapes = (
-{
-closed = 1;
-nodes = (
-(630,435,l),
-(120,671,l),
-(120,558,l),
-(570,355,l),
-(570,350,l),
-(630,350,l)
-);
-}
-);
-width = 750;
-},
-{
-anchors = (
-{
-name = _connect;
-pos = (660,350);
-},
-{
-name = connect;
-pos = (660,350);
-}
-);
-background = {
-shapes = (
-{
-ref = "en-cy";
-}
-);
-};
-guides = (
-{
-pos = (302,350);
-}
-);
-layerId = m002;
-partSelection = {
-"Vertical Shift" = 1;
-};
-shapes = (
-{
-closed = 1;
-nodes = (
-(660,488,l),
-(90,695,l),
-(90,527,l),
-(560,360,l),
-(560,350,l),
-(660,350,l)
-);
-}
-);
-width = 750;
-},
-{
-anchors = (
-{
-name = _connect;
-pos = (500,350);
-},
-{
-name = connect;
-pos = (500,350);
-}
-);
-background = {
-shapes = (
-{
-ref = "en-cy";
-}
-);
-};
-guides = (
-{
-pos = (302,350);
-}
-);
-layerId = m005;
-partSelection = {
-"Vertical Shift" = 1;
-};
-shapes = (
-{
-closed = 1;
-nodes = (
-(500,424,l),
-(100,631,l),
-(100,518,l),
-(420,355,l),
-(420,350,l),
-(500,350,l)
-);
-}
-);
-width = 600;
-},
-{
-anchors = (
-{
-name = _connect;
-pos = (540,350);
-},
-{
-name = connect;
-pos = (540,350);
-}
-);
-background = {
-shapes = (
-{
-ref = "en-cy";
-}
-);
-};
-guides = (
-{
-pos = (302,350);
-}
-);
-layerId = m006;
-partSelection = {
-"Vertical Shift" = 1;
-};
-shapes = (
-{
-closed = 1;
-nodes = (
-(540,475,l),
-(60,665,l),
-(60,497,l),
-(420,360,l),
-(420,350,l),
-(540,350,l)
-);
-}
-);
-width = 600;
-},
-{
-anchors = (
-{
-name = _connect;
-pos = (600,350);
-},
-{
-name = connect;
-pos = (600,350);
-}
-);
-background = {
-shapes = (
-{
-ref = "en-cy";
-}
-);
-};
-guides = (
-{
-pos = (302,350);
-}
-);
-layerId = m007;
-partSelection = {
-"Vertical Shift" = 1;
-};
-shapes = (
-{
-closed = 1;
-nodes = (
-(600,377,l),
-(150,637,l),
-(150,593,l),
-(570,353,l),
-(570,350,l),
-(600,350,l)
-);
-}
-);
-width = 750;
-},
-{
-anchors = (
-{
-name = _connect;
-pos = (460,350);
-},
-{
-name = connect;
-pos = (460,350);
-}
-);
-background = {
-shapes = (
-{
-ref = "en-cy";
-}
-);
-};
-guides = (
-{
-pos = (302,350);
-}
-);
-layerId = m009;
-partSelection = {
-"Vertical Shift" = 1;
-};
-shapes = (
-{
-closed = 1;
-nodes = (
-(460,375,l),
-(140,597,l),
-(140,551,l),
-(430,353,l),
-(430,350,l),
-(460,350,l)
-);
-}
-);
-width = 600;
-}
-);
-partsSettings = (
-{
-bottomValue = 180;
-name = "Vertical Shift";
-topValue = 270;
 }
 );
 },
