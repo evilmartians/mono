@@ -64,9 +64,9 @@ For the best results use the following pairs of size / line height:
 
 ## Roadmap
 
-* Basic Cyrillic script (WIP, [watch the process](https://twitter.com/romanshamin_en) on Twitter)
 * Coding ligatures (blocked by [Glyphs app bug](https://forum.glyphsapp.com/t/glyphs-crashes-because-of-pos-rule/22838/17))
 * Powerline symbols
+* Cyrillic script for Bulgarian, Serbian, and Macedonian
 * Italics
 
 ## Support
