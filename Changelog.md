@@ -1,5 +1,13 @@
 # Changelog
 
+## 2022-12-29, version 1.0.0
+- Added the basic Cyrillic script:
+```
+АБВГҐДЕЁЖЗИЙКЛМНОПРСТУЎФХЧЦШЩЬЫЪЄЭІЇЮЯабвгґдеёжзийклмнопрстуўфхчцшщьыъєэіїюя
+```
+- Polished dieresiscomb.
+- Added `₴` currency symbol (hryvnia).
+
 ## 2022-10-02, version 0.9.2
 
 - Added .notdef glyph.
