@@ -1,6 +1,9 @@
 {
 .appVersion = "3148";
 .formatVersion = 3;
+DisplayStrings = (
+"ЁЁ/brevecomb-cy ЎІЇ"
+);
 axes = (
 {
 name = Weight;
@@ -79,6 +82,28 @@ value = (
 {
 name = isFixedPitch;
 value = 1;
+},
+{
+disabled = 1;
+name = "Axis Mappings";
+value = {
+wdth = {
+75 = 3;
+87.5 = 4;
+100 = 5;
+112.5 = 6;
+};
+wght = {
+100 = 40;
+200 = 68;
+300 = 96;
+400 = 110;
+500 = 126;
+600 = 144;
+700 = 162;
+800 = 180;
+};
+};
 }
 );
 date = "2020-11-28 12:14:13 +0000";
@@ -44731,7 +44756,7 @@ unicode = 1059;
 },
 {
 glyphname = "Ushort-cy";
-lastChange = "2022-12-02 18:56:57 +0000";
+lastChange = "2023-01-06 14:00:35 +0000";
 layers = (
 {
 layerId = m009;
@@ -85576,13 +85601,17 @@ width = 750;
 },
 {
 glyphname = "brevecomb-cy";
-lastChange = "2022-04-06 19:24:46 +0000";
+lastChange = "2023-01-06 14:00:56 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
 pos = (375,600);
+},
+{
+name = top;
+pos = (375,801);
 }
 );
 layerId = m01;
@@ -85614,6 +85643,10 @@ anchors = (
 {
 name = _top;
 pos = (375,620);
+},
+{
+name = top;
+pos = (375,821);
 }
 );
 layerId = m002;
@@ -85645,6 +85678,10 @@ anchors = (
 {
 name = _top;
 pos = (300,600);
+},
+{
+name = top;
+pos = (300,811);
 }
 );
 layerId = m005;
@@ -85676,6 +85713,10 @@ anchors = (
 {
 name = _top;
 pos = (300,620);
+},
+{
+name = top;
+pos = (300,831);
 }
 );
 layerId = m006;
@@ -85707,6 +85748,10 @@ anchors = (
 {
 name = _top;
 pos = (375,588);
+},
+{
+name = top;
+pos = (375,811);
 }
 );
 layerId = m007;
@@ -85738,6 +85783,10 @@ anchors = (
 {
 name = _top;
 pos = (300,588);
+},
+{
+name = top;
+pos = (300,801);
 }
 );
 layerId = m009;
@@ -85768,13 +85817,17 @@ width = 600;
 },
 {
 glyphname = dieresiscomb;
-lastChange = "2022-12-26 19:30:57 +0000";
+lastChange = "2023-01-06 14:01:49 +0000";
 layers = (
 {
 anchors = (
 {
 name = _top;
 pos = (375,600);
+},
+{
+name = top;
+pos = (375,801);
 }
 );
 background = {
@@ -85829,6 +85882,10 @@ anchors = (
 {
 name = _top;
 pos = (375,620);
+},
+{
+name = top;
+pos = (375,851);
 }
 );
 background = {
@@ -85883,6 +85940,10 @@ anchors = (
 {
 name = _top;
 pos = (300,600);
+},
+{
+name = top;
+pos = (300,801);
 }
 );
 background = {
@@ -85937,6 +85998,10 @@ anchors = (
 {
 name = _top;
 pos = (300,620);
+},
+{
+name = top;
+pos = (300,861);
 }
 );
 background = {
@@ -85991,6 +86056,10 @@ anchors = (
 {
 name = _top;
 pos = (375,588);
+},
+{
+name = top;
+pos = (375,771);
 }
 );
 background = {
@@ -86045,6 +86114,10 @@ anchors = (
 {
 name = _top;
 pos = (300,588);
+},
+{
+name = top;
+pos = (300,781);
 }
 );
 background = {
