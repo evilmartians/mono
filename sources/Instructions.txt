@@ -56,7 +56,5 @@ Fontmake doesn't support this, so in GF version, we use alternate layers.
 To move from one version to the other, this is the process:
 
 	· Uncheck export for dollar.bold and cent.bold
-	· Rename dollar and cent dollarmartian and centmartian and uncheck export
-	· Rename dollarGF and centGF dollar and cent and check export
 
 
