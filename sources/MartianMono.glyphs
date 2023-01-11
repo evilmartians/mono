@@ -1,9 +1,6 @@
 {
 .appVersion = "3148";
 .formatVersion = 3;
-DisplayStrings = (
-"ЁЁ/brevecomb-cy ЎІЇ"
-);
 axes = (
 {
 name = Weight;
@@ -47966,6 +47963,351 @@ width = 600;
 unicode = 1071;
 },
 {
+color = 9;
+glyphname = "Esdescender-cy";
+lastChange = "2023-01-11 15:18:24 +0000";
+layers = (
+{
+layerId = m009;
+shapes = (
+{
+ref = C;
+},
+{
+pos = (18,0);
+ref = cedillacomb;
+}
+);
+width = 600;
+},
+{
+layerId = m005;
+shapes = (
+{
+ref = C;
+},
+{
+pos = (20,0);
+ref = cedillacomb;
+}
+);
+width = 600;
+},
+{
+layerId = m006;
+shapes = (
+{
+ref = C;
+},
+{
+pos = (20,0);
+ref = cedillacomb;
+}
+);
+width = 600;
+},
+{
+layerId = m007;
+shapes = (
+{
+ref = C;
+},
+{
+pos = (23,0);
+ref = cedillacomb;
+}
+);
+width = 750;
+},
+{
+layerId = m01;
+shapes = (
+{
+ref = C;
+},
+{
+pos = (29,0);
+ref = cedillacomb;
+}
+);
+width = 750;
+},
+{
+layerId = m002;
+shapes = (
+{
+ref = C;
+},
+{
+pos = (21,0);
+ref = cedillacomb;
+}
+);
+width = 750;
+}
+);
+metricWidth = space;
+unicode = 1194;
+},
+{
+color = 9;
+glyphname = "Abreve-cy";
+lastChange = "2023-01-11 15:14:35 +0000";
+layers = (
+{
+layerId = m009;
+shapes = (
+{
+ref = "A-cy";
+},
+{
+pos = (0,212);
+ref = "brevecomb-cy";
+}
+);
+width = 600;
+},
+{
+layerId = m005;
+shapes = (
+{
+ref = "A-cy";
+},
+{
+pos = (0,200);
+ref = "brevecomb-cy";
+}
+);
+width = 600;
+},
+{
+layerId = m006;
+shapes = (
+{
+ref = "A-cy";
+},
+{
+pos = (0,180);
+ref = "brevecomb-cy";
+}
+);
+width = 600;
+},
+{
+layerId = m007;
+shapes = (
+{
+ref = "A-cy";
+},
+{
+pos = (0,212);
+ref = "brevecomb-cy";
+}
+);
+width = 750;
+},
+{
+layerId = m01;
+shapes = (
+{
+ref = "A-cy";
+},
+{
+pos = (0,200);
+ref = "brevecomb-cy";
+}
+);
+width = 750;
+},
+{
+layerId = m002;
+shapes = (
+{
+ref = "A-cy";
+},
+{
+pos = (0,180);
+ref = "brevecomb-cy";
+}
+);
+width = 750;
+}
+);
+unicode = 1232;
+},
+{
+color = 9;
+glyphname = "Iebreve-cy";
+lastChange = "2023-01-11 15:14:54 +0000";
+layers = (
+{
+layerId = m009;
+shapes = (
+{
+ref = "Ie-cy";
+},
+{
+pos = (32,212);
+ref = "brevecomb-cy";
+}
+);
+width = 600;
+},
+{
+layerId = m005;
+shapes = (
+{
+ref = "Ie-cy";
+},
+{
+pos = (26,200);
+ref = "brevecomb-cy";
+}
+);
+width = 600;
+},
+{
+layerId = m006;
+shapes = (
+{
+ref = "Ie-cy";
+},
+{
+pos = (20,180);
+ref = "brevecomb-cy";
+}
+);
+width = 600;
+},
+{
+layerId = m007;
+shapes = (
+{
+ref = "Ie-cy";
+},
+{
+pos = (47,212);
+ref = "brevecomb-cy";
+}
+);
+width = 750;
+},
+{
+layerId = m01;
+shapes = (
+{
+ref = "Ie-cy";
+},
+{
+pos = (39,200);
+ref = "brevecomb-cy";
+}
+);
+width = 750;
+},
+{
+layerId = m002;
+shapes = (
+{
+ref = "Ie-cy";
+},
+{
+pos = (27,180);
+ref = "brevecomb-cy";
+}
+);
+width = 750;
+}
+);
+unicode = 1238;
+},
+{
+color = 9;
+glyphname = "Uhungarumlaut-cy";
+lastChange = "2023-01-11 15:14:35 +0000";
+layers = (
+{
+layerId = m009;
+shapes = (
+{
+ref = "U-cy";
+},
+{
+pos = (20,212);
+ref = hungarumlautcomb;
+}
+);
+width = 600;
+},
+{
+layerId = m005;
+shapes = (
+{
+ref = "U-cy";
+},
+{
+pos = (20,200);
+ref = hungarumlautcomb;
+}
+);
+width = 600;
+},
+{
+layerId = m006;
+shapes = (
+{
+ref = "U-cy";
+},
+{
+pos = (20,180);
+ref = hungarumlautcomb;
+}
+);
+width = 600;
+},
+{
+layerId = m007;
+shapes = (
+{
+ref = "U-cy";
+},
+{
+pos = (25,212);
+ref = hungarumlautcomb;
+}
+);
+width = 750;
+},
+{
+layerId = m01;
+shapes = (
+{
+ref = "U-cy";
+},
+{
+pos = (25,200);
+ref = hungarumlautcomb;
+}
+);
+width = 750;
+},
+{
+layerId = m002;
+shapes = (
+{
+ref = "U-cy";
+},
+{
+pos = (25,180);
+ref = hungarumlautcomb;
+}
+);
+width = 750;
+}
+);
+unicode = 1266;
+},
+{
 glyphname = "a-cy";
 kernLeft = a_left;
 kernRight = n_right;
@@ -55201,6 +55543,351 @@ width = 600;
 }
 );
 unicode = 1103;
+},
+{
+color = 9;
+glyphname = "esdescender-cy";
+lastChange = "2023-01-11 15:18:47 +0000";
+layers = (
+{
+layerId = m009;
+shapes = (
+{
+ref = c;
+},
+{
+pos = (16,0);
+ref = cedillacomb;
+}
+);
+width = 600;
+},
+{
+layerId = m005;
+shapes = (
+{
+ref = c;
+},
+{
+pos = (20,0);
+ref = cedillacomb;
+}
+);
+width = 600;
+},
+{
+layerId = m006;
+shapes = (
+{
+ref = c;
+},
+{
+pos = (20,0);
+ref = cedillacomb;
+}
+);
+width = 600;
+},
+{
+layerId = m007;
+shapes = (
+{
+ref = c;
+},
+{
+pos = (13,0);
+ref = cedillacomb;
+}
+);
+width = 750;
+},
+{
+layerId = m01;
+shapes = (
+{
+ref = c;
+},
+{
+pos = (23,0);
+ref = cedillacomb;
+}
+);
+width = 750;
+},
+{
+layerId = m002;
+shapes = (
+{
+ref = c;
+},
+{
+pos = (19,0);
+ref = cedillacomb;
+}
+);
+width = 750;
+}
+);
+metricWidth = space;
+unicode = 1195;
+},
+{
+color = 9;
+glyphname = "abreve-cy";
+lastChange = "2023-01-11 15:14:35 +0000";
+layers = (
+{
+layerId = m009;
+shapes = (
+{
+ref = "a-cy";
+},
+{
+pos = (-10,0);
+ref = "brevecomb-cy";
+}
+);
+width = 600;
+},
+{
+layerId = m005;
+shapes = (
+{
+ref = "a-cy";
+},
+{
+pos = (-10,0);
+ref = "brevecomb-cy";
+}
+);
+width = 600;
+},
+{
+layerId = m006;
+shapes = (
+{
+ref = "a-cy";
+},
+{
+pos = (-2,0);
+ref = "brevecomb-cy";
+}
+);
+width = 600;
+},
+{
+layerId = m007;
+shapes = (
+{
+ref = "a-cy";
+},
+{
+pos = (-17,0);
+ref = "brevecomb-cy";
+}
+);
+width = 750;
+},
+{
+layerId = m01;
+shapes = (
+{
+ref = "a-cy";
+},
+{
+pos = (-3,0);
+ref = "brevecomb-cy";
+}
+);
+width = 750;
+},
+{
+layerId = m002;
+shapes = (
+{
+ref = "a-cy";
+},
+{
+pos = (1,0);
+ref = "brevecomb-cy";
+}
+);
+width = 750;
+}
+);
+unicode = 1233;
+},
+{
+color = 9;
+glyphname = "iebreve-cy";
+lastChange = "2023-01-11 15:14:35 +0000";
+layers = (
+{
+layerId = m009;
+shapes = (
+{
+ref = "ie-cy";
+},
+{
+pos = (8,0);
+ref = "brevecomb-cy";
+}
+);
+width = 600;
+},
+{
+layerId = m005;
+shapes = (
+{
+ref = "ie-cy";
+},
+{
+pos = (6,0);
+ref = "brevecomb-cy";
+}
+);
+width = 600;
+},
+{
+layerId = m006;
+shapes = (
+{
+ref = "ie-cy";
+},
+{
+pos = (6,0);
+ref = "brevecomb-cy";
+}
+);
+width = 600;
+},
+{
+layerId = m007;
+shapes = (
+{
+ref = "ie-cy";
+},
+{
+pos = (9,0);
+ref = "brevecomb-cy";
+}
+);
+width = 750;
+},
+{
+layerId = m01;
+shapes = (
+{
+ref = "ie-cy";
+},
+{
+pos = (9,0);
+ref = "brevecomb-cy";
+}
+);
+width = 750;
+},
+{
+layerId = m002;
+shapes = (
+{
+ref = "ie-cy";
+},
+{
+pos = (9,0);
+ref = "brevecomb-cy";
+}
+);
+width = 750;
+}
+);
+unicode = 1239;
+},
+{
+color = 9;
+glyphname = "uhungarumlaut-cy";
+lastChange = "2023-01-11 15:14:35 +0000";
+layers = (
+{
+layerId = m009;
+shapes = (
+{
+ref = "u-cy";
+},
+{
+pos = (16,0);
+ref = hungarumlautcomb;
+}
+);
+width = 600;
+},
+{
+layerId = m005;
+shapes = (
+{
+ref = "u-cy";
+},
+{
+pos = (8,0);
+ref = hungarumlautcomb;
+}
+);
+width = 600;
+},
+{
+layerId = m006;
+shapes = (
+{
+ref = "u-cy";
+},
+{
+pos = (16,0);
+ref = hungarumlautcomb;
+}
+);
+width = 600;
+},
+{
+layerId = m007;
+shapes = (
+{
+ref = "u-cy";
+},
+{
+pos = (5,0);
+ref = hungarumlautcomb;
+}
+);
+width = 750;
+},
+{
+layerId = m01;
+shapes = (
+{
+ref = "u-cy";
+},
+{
+pos = (3,0);
+ref = hungarumlautcomb;
+}
+);
+width = 750;
+},
+{
+layerId = m002;
+shapes = (
+{
+ref = "u-cy";
+},
+{
+pos = (17,0);
+ref = hungarumlautcomb;
+}
+);
+width = 750;
+}
+);
+unicode = 1267;
 },
 {
 glyphname = zero;
