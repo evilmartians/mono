@@ -55,12 +55,69 @@ And 7 weights:
 
 Originally designed for the screen, the glyph heights stick to the pixel grid on commonly used font sizes. In addition, it comes equipped with OpenType and TrueType hinting, and Martian Mono appears legible on most platforms, even when being rendered in small sizes.
 
-For the best results use the following pairs of size / line height:
+For the best results, use the following pairs of size and line height:
 
 * 7.5 / 10 (or 14, 18, etc.) px
 * 10 / 12 (or 16, 20, etc.) px
 * 12.5 / 14 (or 18, 22, etc.) px
 * 15 / 20 (or 24, 28, etc.) px
+
+## Usage
+
+_You are welcome to add more hints on usage (especially on the desktop) via pull requests._
+
+### On the Web
+
+Download the `woff2` package from the [releases page](https://github.com/evilmartians/mono/releases) to get the variable font in WOFF2 format ([see WOFF2 support matrix between browsers](https://caniuse.com/woff2)).
+
+Consult the following articles from Evil Martians' blog on how to use variable fonts:
+
+* [Variable fonts in real life: how to use and love them](https://evilmartians.com/chronicles/variable-fonts-in-real-life-how-to-use-and-love-them)
+* [The joy of Variable Fonts: getting started on the Frontend](https://evilmartians.com/chronicles/the-joy-of-variable-fonts-getting-started-on-the-frontend)
+
+### On the Desktop: choosing a variant
+
+For better compatibility with various terminal emulators and text editors on the desktop, it is a good idea to install the font not as a single variable font but as several different fonts. See the [releases page](https://github.com/evilmartians/mono/releases), and download `otf` for macOS and `ttf` for Windows. Install the fonts.
+
+Next, if your application has a font picker, just choose _Martian Mono_ and the variant you require.
+
+If the configuration is done using a text file, use `Martian Mono` for the default font variant (_Martian Mono Std Rg_), or try specifying the font name like `MartianMono-NrRg` for the _Nr Rg_ variant.
+
+### On the Desktop: line spacing
+
+Once you install the font and start using it, you might notice that the picture might look quite confined:
+
+<img src="./documentation/line-spacing-1_0.png">
+
+Instead, you might want to opt for something more readable and easy for the eyes if you like:
+
+<img src="./documentation/line-spacing-1_4.png">
+
+The difference is _line spacing_. Learn how to set it up below, and consult the _Font size and legibility_ chapter to learn about the best setting. Or, experiment yourself by setting different percentages (`120%`, `140%`) or paddings in pixels (`1`, `2`, `4`, and so on).
+
+#### Terminal emulators
+
+##### Terminal (macOS)
+
+Preferences → Profiles → (choose a profile) → Text → Font → [Change]. You will be met with a font picker dialog that has the _Line Spacing_ property.
+
+##### iTerm 2 (macOS)
+
+Preferences → Profiles → (choose a profile) → Text. Look for the `n/n` symbol that looks like a fraction. That's your line spacing, in percentage (100% is the default).
+
+##### kitty
+
+Open the config file (`~/.config/kitty/kitty.conf`). Look for the `adjust_line_height` property and see the documentation.
+
+#### Text editors
+
+##### vim
+
+For setting line spacing in GUI versions of vim, see [`linespace`/`lsp`](https://vimhelp.org/options.txt.html#%27linespace%27).
+
+##### Sublime Text
+
+Open your preferences. Add the `line_padding_top` and `line_padding_bottom` parameters. Both set the padding for a line of text in pixels.
 
 ## Roadmap
 
