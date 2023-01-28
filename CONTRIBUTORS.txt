@@ -14,3 +14,4 @@ Dave Crossland <dcrossland@google.com>
 Emma Marichal <bonjour@emmamarichal.fr>
 Vivana Monsalve <viviana.monsalve.a@gmail.com>
 Rosalie Wagner <mail@rosaliewagner.com>
+Nikita Prokopov <niki@tonsky.me>
