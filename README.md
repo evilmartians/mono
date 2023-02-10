@@ -55,7 +55,7 @@ And 7 weights:
 
 Originally designed for the screen, the glyph heights stick to the pixel grid on commonly used font sizes. In addition, it comes equipped with OpenType and TrueType hinting, and Martian Mono appears legible on most platforms, even when being rendered in small sizes.
 
-For the best results, use the following pairs of size and line height:
+For the best results, use the following pairs of size / line height:
 
 * 7.5 / 10 (or 14, 18, etc.) px
 * 10 / 12 (or 16, 20, etc.) px
@@ -82,6 +82,12 @@ For better compatibility with various terminal emulators and text editors on the
 Next, if your application has a font picker, just choose _Martian Mono_ and the variant you require.
 
 If the configuration is done using a text file, use `Martian Mono` for the default font variant (_Martian Mono Std Rg_), or try specifying the font name like `MartianMono-NrRg` for the _Nr Rg_ variant.
+
+#### Choosing a variant for a dark background
+
+When choosing a font variant for a darker (or pitch black) background for your terminal or text editor, consider choosing a "lighter" variant if the font looks "too bold" to you. White font on a dark background can have that effect, [see here for details](https://evilmartians.com/chronicles/variable-fonts-in-real-life-how-to-use-and-love-them#variable-fonts-in-practice).
+
+For example, go for _Std Lt_ instead of _Std Rg_.
 
 ### On the Desktop: line spacing
 
