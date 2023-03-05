@@ -138,6 +138,18 @@ Open the config file (`~/.config/kitty/kitty.conf`). Look for the `adjust_line_h
 
 #### Text editors
 
+##### VS Code
+
+```jsonc
+// settings.json
+{
+    "editor.fontFamily": "Martian Mono",
+    "editor.fontSize": 12.5,
+    "editor.lineHeight": 20,
+}
+```
+
+
 ##### vim
 
 For setting line spacing in GUI versions of vim, see [`linespace`/`lsp`](https://vimhelp.org/options.txt.html#%27linespace%27).
