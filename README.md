@@ -117,6 +117,38 @@ Open the config file (`~/.config/kitty/kitty.conf`). Look for the `adjust_line_h
 
 #### Text editors
 
+##### VS Code
+
+To specify values for variable axes, use `editor.fontVariations`:
+
+```jsonc
+// settings.json
+{
+    "editor.fontFamily": "Martian Mono",
+    "editor.fontVariations": "'wdth' 87.5, 'wght' 450",
+}
+```
+
+Consider switching font aliasing method to `auto` for improved rendering on displays with high DPI:
+
+```jsonc
+// settings.json
+{
+    "workbench.fontAliasing": "auto",
+}
+```
+
+Finally, fine tune line height (`editor.lineHeight`):
+
+```jsonc
+// settings.json
+{
+    "editor.fontFamily": "Martian Mono",
+    "editor.fontSize": 12.5,
+    "editor.lineHeight": 20,
+}
+```
+
 ##### vim
 
 For setting line spacing in GUI versions of vim, see [`linespace`/`lsp`](https://vimhelp.org/options.txt.html#%27linespace%27).
