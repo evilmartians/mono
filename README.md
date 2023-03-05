@@ -66,27 +66,6 @@ For the best results, use the following pairs of size / line height:
 
 _You are welcome to add more hints on usage (especially on the desktop) via pull requests._
 
-### In VS Code
-
-To specify values for variable axes, use `editor.fontVariations`:
-
-```jsonc
-// settings.json
-{
-    "editor.fontFamily": "Martian Mono",
-    "editor.fontVariations": "'wdth' 87.5, 'wght' 450",
-}
-```
-
-Consider switching font aliasing method to `auto` for improved rendering on displays with high DPI:
-
-```jsonc
-// settings.json
-{
-    "workbench.fontAliasing": "auto",
-}
-```
-
 ### On the Web
 
 Download the `woff2` package from the [releases page](https://github.com/evilmartians/mono/releases) to get the variable font in WOFF2 format ([see WOFF2 support matrix between browsers](https://caniuse.com/woff2)).
@@ -140,6 +119,27 @@ Open the config file (`~/.config/kitty/kitty.conf`). Look for the `adjust_line_h
 
 ##### VS Code
 
+To specify values for variable axes, use `editor.fontVariations`:
+
+```jsonc
+// settings.json
+{
+    "editor.fontFamily": "Martian Mono",
+    "editor.fontVariations": "'wdth' 87.5, 'wght' 450",
+}
+```
+
+Consider switching font aliasing method to `auto` for improved rendering on displays with high DPI:
+
+```jsonc
+// settings.json
+{
+    "workbench.fontAliasing": "auto",
+}
+```
+
+Finally, fine tune line height (`editor.lineHeight`):
+
 ```jsonc
 // settings.json
 {
@@ -148,7 +148,6 @@ Open the config file (`~/.config/kitty/kitty.conf`). Look for the `adjust_line_h
     "editor.lineHeight": 20,
 }
 ```
-
 
 ##### vim
 
