@@ -79,16 +79,16 @@ Consult the following articles from Evil Martians' blog on how to use variable f
 
 For better compatibility with various terminal emulators and text editors on the desktop, it is a good idea to install the font not as a single variable font but as several different fonts.
 
-#### macOS
-- See the [releases page](https://github.com/evilmartians/mono/releases), and download `otf`. Install the fonts.
-- Or use [brew](http://brew.sh/) and [cask](https://caskroom.github.io/):
-  ```shell
-  brew tap homebrew/cask-fonts
-  brew install --cask font-martian-mono
-  ```
+- macOS
+  - See the [releases page](https://github.com/evilmartians/mono/releases), and download `otf`. Install the fonts.
+  - Or use [brew](http://brew.sh/) and [cask](https://caskroom.github.io/):
+    ```shell
+    brew tap homebrew/cask-fonts
+    brew install --cask font-martian-mono
+    ```
 
-#### Windows
-See the [releases page](https://github.com/evilmartians/mono/releases), and download `ttf`. Install the fonts.
+- Windows
+  - See the [releases page](https://github.com/evilmartians/mono/releases), and download `ttf`. Install the fonts.
 
 Next, if your application has a font picker, just choose _Martian Mono_ and the variant you require.
 
