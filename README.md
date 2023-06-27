@@ -6,7 +6,7 @@ Martian Mono is a monospaced version of the Martian Grotesk font for code style 
 
 ---
 
-**Get your [Martian Grotesk free trial](https://romanshamin.gumroad.com/l/martian-grotesk-font) on Gumroad or [buy it on MyFonts](https://www.myfonts.com/collections/martian-grotesk-font-martian-fonts).**
+**Get your [Martian Grotesk free trial](https://romanshamin.gumroad.com/l/martian-grotesk-font) on Gumroad or [buy it on MyFonts](https://www.myfonts.com/collections/martian-grotesk-font-martian-fonts) to support Mono development.**
 
 ---
 
