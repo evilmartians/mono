@@ -1,6 +1,6 @@
-# Martian Mono
+<img src="./documentation/icon.png" width="208" height="208">
 
-<img align="right" src="./documentation/icon.png" width="208" height="208">
+# Martian Mono
 
 Martian Mono is a monospaced version of the Martian Grotesk font for code style design. It inherits Grotesk’s brutal and eye-catching aesthetics as well as all of its benefits—metrics equilibrium, readability and intelligibility, and convenience for web developers and designers who believe in a systematic approach to design.
 
