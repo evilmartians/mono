@@ -14,7 +14,7 @@ When choosing a font format, prefer `ttf` for variable and `otf` for static on m
 
 ## Download
 
-Download the latest package from the [releases page](https://github.com/evilmartians/mono/releases).
+Download the latest package from the [releases page](https://github.com/evilmartians/mono/releases) or embed the font from [Google Fonts](https://fonts.google.com/specimen/Martian+Mono).
 
 ## Styles
 
