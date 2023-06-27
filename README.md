@@ -173,16 +173,16 @@ Open your preferences. Add the `line_padding_top` and `line_padding_bottom` para
 
 ## Roadmap
 
-* Coding ligatures (blocked by [Glyphs app bug](https://forum.glyphsapp.com/t/glyphs-crashes-because-of-pos-rule/22838/17))
-* Powerline symbols
-* Cyrillic script for Bulgarian, Serbian, and Macedonian
-* Italics
+* Coding ligatures (work in progress)
+* Cyrillic script for Bulgarian, Serbian, and Macedonian (work in progress)
+* Powerline symbols (not sure)
+* Italics (not sure)
 
 ## Support
 
-If you want to support Martian Mono:
+My name is [Roman Shamin](https://twitter.com/romanshamin_en), and I work on Martian Mono in my spare time. If you want to support Martian Mono, [oklch.com](https://oklch.com), and [other free and open-source fonts](https://twitter.com/romanshamin_en/status/1672980822087856131), there are a few things you can do.
 
-* Spread the word on social media
+* Spread the word on social media by using the hashtag [#MartianMono](https://twitter.com/search?q=%23MartianMono&src=hashtag_click&f=live)
 * Buy Martian Grotesk [on MyFonts](https://www.myfonts.com/collections/martian-grotesk-font-martian-fonts) or [Gumroad](https://romanshamin.gumroad.com/l/martian-grotesk-font)
 * Consider [becoming a patron](https://www.patreon.com/romanshamin)
 
