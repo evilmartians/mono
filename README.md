@@ -121,6 +121,20 @@ Preferences → Profiles → (choose a profile) → Text → Font → [Change]. 
 
 Preferences → Profiles → (choose a profile) → Text. Look for the `n/n` symbol that looks like a fraction. That's your line spacing, in percentage (100% is the default).
 
+##### Ghostty
+
+Open or create a configuration file at `~/.config/ghostty/config`. Try the following settings (be sure to set the font size you like):
+
+```
+font-family = "Martian Mono"
+font-size = 14
+adjust-cell-height = 20%
+```
+
+Relaunch the terminal, or reload the configuration with `cmd+shift+,` (macOS) or `ctrl+shift+,` (Linux).
+
+Consult the official documentation on font rendering and options here: https://ghostty.org/docs/config
+
 ##### kitty
 
 Open the config file (`~/.config/kitty/kitty.conf`). Look for the `adjust_line_height` property and see the documentation.
