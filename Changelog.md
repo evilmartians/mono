@@ -3,7 +3,7 @@
 ## 2025-02-10, version 1.1.0
 
 - Added more coding ligatures: `<-`, `>>=`, `<<=`, `‌>>>=`, `>>>`, `<<<`, `<>`, `<~>`, `‌=~`, `!~`, `=!=`, `=:=`, `:::`, `<:<`, `::=`, `>:`, `<:`, `->>`, `^=`, `&=`, `|=`, `|>`, `<|`, `<|>`, `||>`, `<||`, `|||>`, `<|||`, `[|`, `|]`, `&&&`, `^^^`, `~~~`, `:>`, `:?`, `:?>`, `<!--`, `..<`, `..=`, `::<`.
-- Updated the design of `&` (ampresand), now it looks a bit more geometrical.
+- Updated the design of `&` (ampersand), now it looks a bit more geometrical.
 - Rebalanced math symbols.
 - Made parentheses `()`, brackets `[]`, and braces `{}` wider.
 - Made asciitilde `~` more curvy.
