@@ -1,6 +1,69 @@
 # Changelog
 
+## 2025-02-10, version 1.1.0
+
+- Added more coding ligatures: `<-`, `>>=`, `<<=`, `‌>>>=`, `>>>`, `<<<`, `<>`, `<~>`, `‌=~`, `!~`, `=!=`, `=:=`, `:::`, `<:<`, `::=`, `>:`, `<:`, `->>`, `^=`, `&=`, `|=`, `|>`, `<|`, `<|>`, `||>`, `<||`, `|||>`, `<|||`, `[|`, `|]`, `&&&`, `^^^`, `~~~`, `:>`, `:?`, `:?>`, `<!--`, `..<`, `..=`, `::<`.
+- Updated the design of `&` (ampresand), now it looks a bit more geometrical.
+- Rebalanced math symbols.
+- Made parentheses `()`, brackets `[]`, and braces `{}` wider.
+- Made asciitilde `~` more curvy.
+
+## 2022-03-16, version 1.1.0, Alpha
+
+- Added coding ligatures: `||=`, `:::`, `===`, `==>`, `!==`, `-->`, `<=>`, `...`, `///`, `&&`, `**`, `/*`, `*/`, `||`, `::`, `:=`, `==`, `=>`, `!=`, `!!`, `>=`, `->`, `--`, `<=`, `..`, `++`, `?.`, `??`, `/=`, `//`, `__`.
+- Added `Ӑӑ` (Abreve-cy, abreve-cy) for Chuvash.
+- Added `Ӗӗ` (Iebreve-cy, iebreve-cy) for Chuvash.
+- Added `Ҫҫ` (Esdescender-cy, esdescender-cy).
+- Added localized  `Çç` (Esdescender-cy.loclCHU, esdescender-cy.loclCHU) for Chuvash and Bashkir.
+- Added `Ӳӳ` (Uhungarumlaut-cy, uhungarumlaut-cy) for Chuvash.
+- Added `Ӝӝ` (Zhedieresis-cy, zhedieresis-cy) for Udmurt.
+- Added `Ӟӟ` (Zedieresis-cy, zedieresis-cy) for Udmurt.
+- Added `Ӥӥ` (Idieresis-cy, idieresis-cy) for Udmurt.
+- Added `Ӧӧ` (Odieresis-cy, odieresis-cy) for Udmurt, Komi, Mari, and other.
+- Added `Ӵӵ` (Chedieresis-cy, chedieresis-cy) for Udmurt.
+- Added `Ҙҙ` (Zedescender-cy, zedescender-cy) for Abkhaz and Bashkir.
+- Added `Ӂӂ` (Zhebreve-cy, zhebreve-cy) for Moldovan and Bashkir.
+- Added `Ӓӓ` (Adieresis-cy, adieresis-cy) for Kalmyk.
+- Added `Ӭӭ` (Edieresis-cy, edieresis-cy).
+- Added `Ӱӱ` (Udieresis-cy, udieresis-cy).
+- Added `Ӹӹ` (Yerudieresis-cy, yerudieresis-cy).
+- Added `Ӷӷ` (Gedescender-cy, gedescender-cy).
+- Added `Ӈӈ` (Enhook-cy, enhook-cy).
+- Added `Ԓԓ` (Elhook-cy, elhook-cy).
+- Added `Ӽӽ` (Hahook-cy, hahook-cy).
+- Added `Ҕҕ` (Gemiddlehook-cy, gemiddlehook-cy).
+- Added `Ҧҧ` (Pemiddlehook-cy, pemiddlehook-cy).
+- Added `Ӄӄ` (Kahook-cy, kahook-cy).
+- Added `Җҗ` (Zhedescender-cy, zhedescender-cy).
+- Added `Ққ` (Kadescender-cy, kadescender-cy).
+- Added `Ҳҳ` (Hadescender-cy, hadescender-cy).
+- Added `Ңң` (Endescender-cy, endescender-cy).
+- Added `Ԥԥ` (Pedescender-cy, pedescender-cy).
+- Added `Ҭҭ` (Tedescender-cy, tedescender-cy).
+- Added `Ҷҷ` (Chedescender-cy, chedescender-cy).
+- Added `Һһ` (Shha-cy, shha-cy).
+- Added `Ԧԧ` (Shhadescender-cy, shhadescender-cy).
+- Added `Ӌӌ` (Chekhakassian-cy, chekhakassian-cy).
+- Added `Ҽҽ` (Cheabkhasian-cy, cheabkhasian-cy).
+- Added `Ҿҿ` (Chedescenderabkhasian-cy, chedescenderabkhasian-cy).
+- Added `Ѓѓ` (Gje-cy, gje-cy).
+- Added `Ќќ` (Kje-cy, kje-cy).
+- Added `Ғғ` (Gestroke-cy, gestroke-cy).
+- Added localized `Ғғ` (Gestroke-cy.loclBSH, gestroke-cy.loclBSH) for Bashkir.
+- Added `Үү` (Ustraight-cy, ustraight-cy).
+- Added `Ұұ` (Ustraightstroke-cy, ustraightstroke-cy).
+- Added `Џџ` (Dzhe-cy, dzhe-cy).
+- Added `Њњ` (Nje-cy, nje-cy).
+- Added `Љљ` (Lje-cy, lje-cy).
+- Added `Әә` (Schwa-cy, schwa-cy).
+- Added `Ӛӛ` (Schwadieresis-cy, schwadieresis-cy).
+- Added `Өө` (Obarred-cy, obarred-cy).
+- Added `Ӫӫ` (Obarreddieresis-cy, obarreddieresis-cy).
+- Added `ʻ` (commaturnedmod) for Uzbek Latin.
+- Added `Ҡҡ` (Kabashkir-cy, kabashkir-cy) for Bashkir.
+
 ## 2022-12-29, version 1.0.0
+
 - Added the basic Cyrillic script:
 ```
 АБВГҐДЕЁЖЗИЙКЛМНОПРСТУЎФХЧЦШЩЬЫЪЄЭІЇЮЯабвгґдеёжзийклмнопрстуўфхчцшщьыъєэіїюя
