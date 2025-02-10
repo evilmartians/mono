@@ -85,7 +85,6 @@ For better compatibility with various terminal emulators and text editors on the
   - See the [releases page](https://github.com/evilmartians/mono/releases), and download `otf`. Install the fonts.
   - Or, use [Homebrew](http://brew.sh/):
     ```shell
-    brew tap homebrew/cask-fonts
     brew install --cask font-martian-mono
     ```
 
