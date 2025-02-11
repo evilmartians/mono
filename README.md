@@ -43,6 +43,14 @@ And 7 weights:
 | Bd | Bold | 700 | bold |
 | xBd | Extra Bold | 800 |  |
 
+## Coding ligatures
+
+Martian Mono offers two sets of coding ligatures. The default set transforms sequences like `-->` into a standard arrow for a cleaner look. For those who prefer unaltered symbols, the second set features spacing ligatures—where `-->` remains two hyphens and a greater-than sign, with subtle spacing and vertical alignment tweaks for improved readability.
+
+Regular ligatures are enabled by default. To switch to spacing ligatures, activate the Stylistic Set #03 OpenType feature.
+
+<img src="./documentation/martian-mono-coding-ligatures.png" width="830">
+
 ## OpenType features
 
 <img src="./documentation/martian-mono-opentype-features.png" width="830">
