@@ -70,6 +70,8 @@ For the best results, use the following pairs of size / line height:
 
 _You are welcome to add more hints on usage (especially on the desktop) via pull requests._
 
+For user convenience, the static font version is named `Martian Mono`, while the variable font family is `Martian Mono VF`. This ensures both versions can be installed simultaneously without conflicts.
+
 ### On the Web
 
 Download the `woff2` package from the [releases page](https://github.com/evilmartians/mono/releases) to get the variable font in WOFF2 format ([see WOFF2 support matrix between browsers](https://caniuse.com/woff2)).
@@ -96,9 +98,9 @@ For better compatibility with various terminal emulators and text editors on the
     brew install --cask font-martian-mono
     ```
 
-Next, if your application has a font picker, just choose _Martian Mono_ and the variant you require.
+Next, if your application has a font picker, just choose `Martian Mono` or `Martian Mono VF` and the variant you require.
 
-If the configuration is done using a text file, use `Martian Mono` for the default font variant (_Martian Mono Std Rg_), or try specifying the font name like `MartianMono-NrRg` for the _Nr Rg_ variant.
+If the configuration is done using a text file, use `Martian Mono` or `Martian Mono VF` for the default font variant (_Martian Mono Std Rg_), or try specifying the font name like `MartianMono-NrRg` for the _Nr Rg_ variant.
 
 #### Choosing a variant for a dark background
 
@@ -133,7 +135,7 @@ Preferences → Profiles → (choose a profile) → Text. Look for the `n/n` sym
 Open or create a configuration file at `~/.config/ghostty/config`. Try the following settings (be sure to set the font size you like):
 
 ```
-font-family = "Martian Mono"
+font-family = "Martian Mono" /* or "Martian Mono VF" */
 font-size = 14
 adjust-cell-height = 20%
 ```
@@ -150,33 +152,31 @@ Open the config file (`~/.config/kitty/kitty.conf`). Look for the `adjust_line_h
 
 ##### VS Code
 
-To specify values for variable axes, use `editor.fontVariations`:
+Use `"editor.fontVariations"` to define variable axis values for `Martian Mono VF`. For the static version (`Martian Mono`), use `"editor.fontWeight"`.
 
 ```jsonc
 // settings.json
 {
-    "editor.fontFamily": "Martian Mono",
-    "editor.fontVariations": "'wdth' 87.5, 'wght' 450",
+    "editor.fontFamily": "'Martian Mono VF', 'Martian Mono', Menlo, monospace",
+    "editor.fontVariations": "'wdth' 100, 'wght' 350",
+    /*"editor.fontWeight": "350",*/
+    "editor.fontLigatures": true, /*or use "'ss03'" for spacing ligatures*/
+    "editor.fontSize": 12.5,
+    "editor.lineHeight": 20,
+    "workbench.fontAliasing": "auto",
 }
 ```
 
-Consider switching font aliasing method to `auto` for improved rendering on displays with high DPI:
+The `'wdth'` property can be set to any value between 75 and 112.5, while the `'wght'` property ranges from 100 to 800. For more details, refer to the [Styles](#styles) section.
+
+To disable coding ligatures, set `"editor.fontLigatures"` to `false`. To enable spacing ligatures, use `"editor.fontLigatures"` with `"'ss03'"`.
+
+For better rendering on high-DPI displays, I recommend setting the font aliasing method to `"auto"`.
 
 ```jsonc
 // settings.json
 {
     "workbench.fontAliasing": "auto",
-}
-```
-
-Finally, fine tune line height (`editor.lineHeight`):
-
-```jsonc
-// settings.json
-{
-    "editor.fontFamily": "Martian Mono",
-    "editor.fontSize": 12.5,
-    "editor.lineHeight": 20,
 }
 ```
 
