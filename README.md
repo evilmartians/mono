@@ -12,6 +12,15 @@ The typeface features a tall x-height, and it has vertical metrics which guarant
 
 When choosing a font format, prefer `ttf` for variable and `otf` for static on macOS, and `ttf` for Windows.
 
+---
+
+<img src="https://cdn.evilmartians.com/badges/logo-no-label.svg" alt="" width="22" height="16" />  Made
+by
+<b><a href="https://evilmartians.com/devtools?utm_source=martian-mono&utm_campaign=devtools-button&utm_medium=github">Evil
+Martians</a></b>, product consulting for <b>developer tools</b>.
+
+---
+
 ## Download
 
 Download the latest package from the [releases page](https://github.com/evilmartians/mono/releases) or embed the font from [Google Fonts](https://fonts.google.com/specimen/Martian+Mono).
